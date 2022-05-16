@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+
+
+.social-media{
+    background-color: $secondary-color;
+    height: 100px;
+    padding: 20px;
+
+    .icons{
+        
+        text-align: center;
+
+        .facebook > img{
+            content:url('../../images/social-media/facebook.png')
+        }
+    
+        .instagram > img{
+            content:url('../../images/social-media/instagram.png')
+        }
+    
+        .whatsapp > img{
+            content:url('../../images/social-media/whatsapp.png')
+        }
+
+        img{
+            max-height: 50px;
+            margin: 5px;
+            background-color: $white-color;
+            border-radius: 50%;
+            padding: 5px;
+            transition: .5s;
+
+            &:hover{
+                background-color: $hover-white;
+            }
+        }
+    }
+    
+}
+
+.carousel-item-ext,.prev{
+    display: none !important;  
+}
+
+.carousel-item {
+    height: 84vh;
+    // background: repeat center center scroll;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    object-fit: cover;
+    
+    &#image-1{
+        content: url('../../images/home/p1-jpg.jpg');
+    }
+    &#image-2{
+        content: url('../../images/home/p2-jpg.jpg');
+    }
+    &#image-3{
+        content: url('../../images/home/p3-jpg.jpg');
+    }
+    &#image-4{
+        content: url('../../images/home/p4-jpg.jpg');
+    }
+    &#image-5{
+        content: url('../../images/home/p5-jpg.jpg');
+    }
+    
+}

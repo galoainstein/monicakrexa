@@ -1,0 +1,128 @@
+@import "../../../variables.scss";
+
+.container{
+    margin: 0;
+    max-width: fit-content;
+    padding: 5vw 7vw;
+
+    .title{
+        font-family: $primary-font;
+        font-size: 3em;
+        color: $green-primary;
+    }
+
+    .text{
+        color: $white-text;
+
+        p{
+            font-family: $quaternary-font;
+            font-size: 1.2vw;
+            text-align: justify;
+            margin-bottom: 2vw;
+
+            .green{
+                color: $green-primary;
+            }
+        }
+
+        .description{
+            border-left: 11px solid $green-primary;
+            padding-left: 10px;
+            padding-right: 10vw;
+            margin-bottom: 2vw;
+
+            font-family: $tertiary-font;
+            text-align: left;
+            letter-spacing: .06em;
+            font-size: 1vw;
+            width: 50%;
+        }
+    }
+    .buttons{
+        button{
+            margin-bottom: 1vw;
+            margin-right: 1vw;
+            padding: .5vw 1vw;
+            font-size: 1.3vw;
+            font-family: $tertiary-font;
+            border: 0;
+            border-radius: 5px;
+            transition: .5s;
+        }
+        .signUp{
+            background-color: $green-secondary;
+            color: $white-color;
+            &:hover{
+                background-color:$green-primary;
+            }
+        }
+        .login{
+            background-color: $white-color;
+            color: $green-secondary;
+            &:hover{
+                background-color:$hover-white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .container {
+        .content{
+            display: inline-flex;
+            flex-direction: row-reverse;
+        }
+    
+        .title{
+            font-size: 3em;
+            margin-bottom: 2vw;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .container{
+        .title{
+            padding-left: 0;
+        }
+
+        .text{
+            p{
+                font-size: 1.5vw;
+                margin-bottom: 1.8vw;
+            }
+            .description{
+                font-size: 1.3vw;
+                width: 60%;
+            }
+        }
+        .buttons > button{
+            font-size: 1.4vw;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .container {
+        .title{
+            font-size: 3em;
+            text-align: left;
+        }
+
+        .text{
+            padding-top: 20px;
+            p{
+                font-size: 13px;
+                margin-bottom: 2.1vw;
+            }
+            .description{
+                font-size: 11px;
+                width: 90%;
+            }
+        } 
+        .buttons > button{
+            font-size: 14px;
+        }
+    }
+}

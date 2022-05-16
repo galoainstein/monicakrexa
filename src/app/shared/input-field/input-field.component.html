@@ -1,0 +1,10 @@
+<div class="form-group" [ngClass]="classeCss">
+  <label [attr.for]="id" class="control-label">{{ label }}: <span class="required" [hidden]="!isRequired">*</span></label><br>
+  <input [type]="type" class="field" [hidden]="isTextArea"
+    [id]="id" [readonly]="!!isReadOnly"
+    [(ngModel)]="value">
+  <textarea class="field" [hidden]="!isTextArea"
+    [id]="id" [readonly]="!!isReadOnly"
+    [(ngModel)]="value"></textarea>
+  <app-error-msg [control]="control" [label]="label"></app-error-msg>
+</div>

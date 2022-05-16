@@ -1,0 +1,119 @@
+@import "../../variables.scss";
+
+.container{
+    margin: 0;
+    max-width: fit-content;
+    padding: 7vw 7vw 5vw 7vw;
+
+    .title{
+        font-family: $primary-font;
+        font-size: 3em;
+        color: $blue-primary;
+    }
+
+    .text{
+        color: $white-text;
+
+        .description{
+            border-left: 11px solid $blue-primary;
+            padding-left: 10px;
+            padding-right: 10vw;
+            margin-bottom: 2vw;
+
+            font-family: $tertiary-font;
+            text-align: left;
+            letter-spacing: .06em;
+            font-size: 1.5vw;
+        }
+
+        p{
+            font-family: $quaternary-font;
+            font-size: 1.2vw;
+            text-align: justify;
+            margin-bottom: 2vw;
+        }
+    }
+
+    #gif{
+        content: url("../../images/gifs/squared.gif");
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .container {
+        .content{
+            display: inline-flex;
+        }
+    
+        .title{
+            font-size: 3em;
+            padding-left: 35vw;
+            margin-bottom: 2vw;
+        }
+    
+        #gif{
+            max-width: 30vw;
+            object-fit: cover;
+            height: 100%;
+            margin-right: 5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .container{
+        .title{
+            padding-left: 0;
+        }
+
+        .text{
+            .description{font-size: 1.7vw;}
+            p{
+                font-size: 1.5vw;
+                margin-bottom: 1.8vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .container {
+        .title{
+            font-size: 3em;
+            text-align: left;
+        }
+
+        .text{
+            padding-top: 20px;
+            .description{
+                font-size: 3vw;
+                margin-bottom: 2.1vw;
+            }
+            p{
+                font-size: 13px;
+                margin-bottom: 2.1vw;
+            }
+        }
+
+        .content{
+            .gif {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30vw;
+                width: 100%;
+                overflow: hidden;
+            }
+            #gif{
+                margin-top: 20px;
+                min-width: 100%;
+                max-width: 100%;
+                
+            }
+        }   
+    }
+}
+
+@media screen and (max-width: 655px) {
+    
+}
