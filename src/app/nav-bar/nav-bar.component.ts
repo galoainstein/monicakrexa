@@ -13,10 +13,6 @@ export class NavBarComponent implements OnInit {
     public pathScrollService: PathScrollService
   ) {}
 
-  ngOnInit(): void {
-    setTimeout(()=>{
-      this.pathScrollService.setVariables()
-    }, 10);
-  }
+  ngOnInit(): void { }
 
 }

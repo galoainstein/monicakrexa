@@ -23,3 +23,10 @@
 nav.navbar{
     min-height: 101px;
 }
+
+.navbar-toggler{
+    border:none;
+    &:focus{
+        box-shadow: none;
+    }
+}

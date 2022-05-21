@@ -1,12 +1,14 @@
 import { SinglePageComponent } from './single-page/single-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DataFormComponent } from './data-form/data-form.component';
+import { FormComponent } from './clients/form/form.component';
+import { ClientsModule } from './clients/clients.module';
 
 const routes: Routes = [
+  // { path: 'clients', loadChildren: () => ClientsModule },
   { path: '', component: SinglePageComponent },
-  { path: '#clients', component: DataFormComponent },
-  { path: '**', pathMatch: 'full', redirectTo: '/' }
+  { path: 'clients', component: FormComponent }
+  // { path: '**', pathMatch: 'full', redirectTo: '/' }
 ];
 
 @NgModule({

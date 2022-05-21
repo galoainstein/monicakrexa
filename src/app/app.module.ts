@@ -1,10 +1,10 @@
+import { ClientsModule } from './clients/clients.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { ColorModule } from './color/color.module';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
-import { DataFormModule } from './data-form/data-form.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -48,8 +48,8 @@ const app = initializeApp(firebaseConfig);
     AppRoutingModule,
     ColorModule,
     SharedModule,
-    DataFormModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ClientsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

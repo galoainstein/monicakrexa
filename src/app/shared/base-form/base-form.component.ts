@@ -10,18 +10,18 @@ export abstract class BaseFormComponent {
 
   abstract submit(): any;
 
-  onSubmit() {
+  public onSubmit() {
     if (this.formulario.valid) {
       this.submit();
+      this.formulario.reset()
     } else {
-      console.log('formulario invalido');
+      console.log('Formulario inválido');
       this.verificaValidacoesForm(this.formulario);
     }
   }
 
-  verificaValidacoesForm(formGroup: FormGroup | FormArray) {
+  private verificaValidacoesForm(formGroup: FormGroup | FormArray) {
     Object.keys(formGroup.controls).forEach(campo => {
-      console.log(campo);
       const controle = formGroup.get(campo)!;
       controle.markAsDirty();
       controle.markAsTouched();
@@ -31,32 +31,21 @@ export abstract class BaseFormComponent {
     });
   }
 
-  resetar() {
-    this.formulario.reset();
-  }
-
-  verificaValidTouched(campo: string) {
+  private verificaValidTouched(campo: string) {
     return (
       !this.formulario.get(campo)!.valid &&
       (this.formulario.get(campo)!.touched || this.formulario.get(campo)!.dirty)
     );
   }
 
-  verificaRequired(campo: string) {
+  private verificaRequired(campo: string) {
     return (
       this.formulario.get(campo)!.hasError('required') &&
       (this.formulario.get(campo)!.touched || this.formulario.get(campo)!.dirty)
     );
   }
 
-  verificaEmailInvalido() {
-    const campoEmail = this.formulario.get('email')!;
-    if (campoEmail.errors) {
-      return campoEmail.errors['email'] && campoEmail.touched;
-    }
-  }
-
-  aplicaCssErro(campo: string) {
+  public aplicaCssErro(campo: string) {
     return {
       'has-error': this.verificaValidTouched(campo),
       'has-feedback': this.verificaValidTouched(campo)

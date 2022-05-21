@@ -1,0 +1,51 @@
+@import '../../../variables.scss';
+
+.field{
+    color: $white-color;  
+    font-family: $quaternary-font;
+}
+
+.form-horizontal{
+    padding: 0 7vw
+}
+
+.required-specs{
+    color: $orange-primary;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: $quaternary-font;
+}
+
+h5{
+    color: $white-color;
+    font-family: $tertiary-font;
+    font-size: 30px;
+}
+
+.btn-submit{
+    margin-bottom: 60px;
+    margin-right: 1vw;
+    padding: .5vw 1vw;
+    font-size: 1.3vw;
+    font-family: $tertiary-font;
+    border: 0;
+    border-radius: 5px;
+    transition: .5s;
+    background-color: $green-secondary;
+    color: $white-color;
+    &:hover{
+        background-color:$green-primary;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 670px) {
+    .btn-submit{
+        font-size: 1.4vw; 
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .btn-submit{
+        font-size: 14px;
+    }
+}
