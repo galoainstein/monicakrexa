@@ -12,6 +12,6 @@
     </div>
     <div class="buttons">
         <button class="signUp" (click)="sendTo('/clients')" [hidden]="!showSignUp">TENHO LOJA FÍSICA E QUERO CADASTRAR</button>
-        <button class="login">ESTOU CADASTRADO E TENHO CHAVE DE ACESSO</button>
+        <button class="login" (click)="sendTo('/clients/login')">ESTOU CADASTRADO E TENHO CHAVE DE ACESSO</button>
     </div>
 </div>

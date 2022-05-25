@@ -1,0 +1,76 @@
+@import '../../../variables.scss';
+
+.content{
+    margin-top: 100px;
+    color: $white-color;
+    text-align: center;
+    padding: 0 calc(50vw - 125px);
+    display: flex;
+    justify-content:right;
+    flex-direction: column;
+    width: 100%;
+
+    .password{
+        margin: 0 25px;
+        font-family: $primary-font;
+        border: none;
+        padding: 5px 9px;
+        border-radius: 2px;
+        margin-bottom: 20px;
+
+        &:focus,&:hover{
+            outline: none;
+            border: none;
+        }
+    }
+
+    h2{
+        color: $secondary-color;
+        font-family: $secondary-font;
+        font-size: 2.5em;
+    }
+    h3{
+        //color: $secondary-color;
+        font-family: $primary-font;
+        font-size: 1.3em;
+    }
+    p{
+        font-family: $primary-font;
+        font-size: 1.1em;
+    }
+    h4,.extra{
+        font-family: $primary-font;
+        font-size: 1em;
+        
+    }
+    .extra{
+        text-align: justify;
+        text-align-last: center;
+    }
+    a{
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+
+    .explanation{
+        width: 250px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .content{
+        h2{
+            font-size: 2em;
+        }
+        h3{
+            font-size: 1em;
+        }
+        h4{
+            font-size: .8em;
+        }
+        .progress{
+            margin: 0 20vw;
+        }
+    }
+}

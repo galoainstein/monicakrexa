@@ -19,6 +19,7 @@ export class PostFormDataService {
       },
       () => {
           console.log("The POST observable is now completed.");
+          window.location.pathname = '/clients/thanks';
       });
   }
 

@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClientsRoutingModule } from './clients-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormComponent } from './form/form.component';
+import { ThanksComponent } from './thanks/thanks.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FormComponent } from './form/form.component';
     ClientsRoutingModule
   ],
   declarations: [
-    FormComponent
+    FormComponent,
+    ThanksComponent,
+    LoginComponent
   ],
   exports: [FormComponent]
 })

@@ -5,9 +5,9 @@ import { FormComponent } from './clients/form/form.component';
 import { ClientsModule } from './clients/clients.module';
 
 const routes: Routes = [
-  // { path: 'clients', loadChildren: () => ClientsModule },
-  { path: '', component: SinglePageComponent },
-  { path: 'clients', component: FormComponent }
+  { path: 'clients', loadChildren: () => ClientsModule },
+  { path: '', component: SinglePageComponent }
+  //{ path: 'clients', component: FormComponent }
   // { path: '**', pathMatch: 'full', redirectTo: '/' }
 ];
 

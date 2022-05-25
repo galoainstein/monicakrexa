@@ -15,6 +15,8 @@ export class PathScrollService {
   public isSelected(page:string){
     if(window.location.pathname.includes('/'+page)){
       return 'selected'
+    } else if (window.location.pathname != '/'){
+      return ''
     }
     const startHeight = this.calculateYOffset(page)
     const nextPage = this.pagesList[this.pagesList.indexOf(page)+1]
@@ -68,7 +70,11 @@ export class PathScrollService {
 
   private calculateYOffset(page:string):number{
     const yOffset = -70; 
+    if (page == 'clients'){
+      page = 'shopkeepers'
+    }
     const element = document.querySelector(`app-${page}`) as HTMLElement
+    if(!element) return 0
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
     return y
   }

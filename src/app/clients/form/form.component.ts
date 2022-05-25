@@ -35,6 +35,7 @@ export class FormComponent extends BaseFormComponent implements OnInit {
 
   public submit() {
     this.postFormData.postData(this.formulario.value);
+    //window.location.pathname = '/clients/thanks';
   }
 
   public getControl(name: string) {
