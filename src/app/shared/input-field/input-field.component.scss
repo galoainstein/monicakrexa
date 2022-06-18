@@ -1,10 +1,10 @@
 @import '../../../variables.scss';
 
 .field{
-    color: $white-color;
-    background-color: $grey;
+    color: $white-primary;
+    background-color: $grey-primary;
     border: 0;
-    border-bottom: 3px solid $white-color;
+    border-bottom: 3px solid $white-primary;
     width: 100%;
 
     &:focus{

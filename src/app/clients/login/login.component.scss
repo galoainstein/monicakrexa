@@ -1,22 +1,43 @@
 @import '../../../variables.scss';
 
+.full-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-row {
+    display: flex;
+    justify-content: center;
+}
+
 .content{
     margin-top: 100px;
-    color: $white-color;
+    color: $white-primary;
     text-align: center;
-    padding: 0 calc(50vw - 125px);
+    padding: 0;
     display: flex;
-    justify-content:right;
+    justify-content:center;
     flex-direction: column;
-    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 270px;
+    max-width: 100%;
+
+    #login{
+        padding-left: 3px;
+    }
+
+    .login-input{
+        position:relative;
+    }
 
     .password{
-        margin: 0 25px;
         font-family: $primary-font;
         border: none;
         padding: 5px 9px;
         border-radius: 2px;
-        margin-bottom: 20px;
+        max-width: 50vw;
 
         &:focus,&:hover{
             outline: none;
@@ -25,7 +46,7 @@
     }
 
     h2{
-        color: $secondary-color;
+        color: $main-color-primary;
         font-family: $secondary-font;
         font-size: 2.5em;
     }
@@ -38,7 +59,7 @@
         font-family: $primary-font;
         font-size: 1.1em;
     }
-    h4,.extra{
+    .unknown,.extra{
         font-family: $primary-font;
         font-size: 1em;
         
@@ -48,13 +69,19 @@
         text-align-last: center;
     }
     a{
-        color: $secondary-color;
+        color: $main-color-primary;
         text-decoration: underline;
     }
 
-    .explanation{
-        width: 250px;
-        visibility: hidden;
+    .incorrect{
+        margin-top: 5px;
+        margin-bottom: 0;
+        color: $red-secondary;
+        font-size: .8em;
+        display: none;
+    }
+    .unknown{
+        margin-top: 20px
     }
 }
 

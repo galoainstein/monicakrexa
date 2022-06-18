@@ -9,14 +9,14 @@
 }
 
 .nav-item > .nav-link{
-    color: $primary-color;
+    color: $black-primary;
     text-align: center;
     letter-spacing: .05em;
     font-family: $secondary-font;
     transition: .5s;
 
     &.selected, &.force-selected, &:hover{
-        color: $tertiary-color;
+        color: $main-color-secondary;
     }
 }
 

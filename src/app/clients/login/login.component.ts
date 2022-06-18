@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/shared/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,18 +9,48 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   explanation: HTMLDivElement;
+  password: HTMLInputElement;
+  view: HTMLButtonElement;
+  login: HTMLButtonElement;
+  incorrect: HTMLParagraphElement;
+  unknown: HTMLAnchorElement;
 
-  constructor() { }
+  constructor(
+    private loginService: LoginService
+  ) { }
 
   ngOnInit(): void {
     this.explanation = document.querySelector('.explanation') as HTMLDivElement;
+    this.view = document.querySelector('#view') as HTMLButtonElement;
+    this.login = document.querySelector('#login') as HTMLButtonElement;
+    this.password = document.querySelector('.password') as HTMLInputElement;
+    this.incorrect = document.querySelector('.incorrect') as HTMLParagraphElement;
+    this.unknown = document.querySelector('.unknown') as HTMLAnchorElement;
+
+    this.login.addEventListener('click', () => {
+      if(!this.loginService.attemptLogin(this.password.value)){
+        this.incorrect.style.display = 'block';
+      };
+    })
+
+    this.view.addEventListener('click', () => {
+      this.togglePasswordVisibility();
+    })
+
+    this.unknown.addEventListener('click', () => {
+      this.switchVisibility(this.explanation);
+    })
   }
 
-  public switchExplanationVisibility() {{
+  public switchVisibility(element:HTMLDivElement|HTMLParagraphElement|HTMLAnchorElement) {
     const states = ['hidden', 'visible'];
-    const currentState = this.explanation.style.visibility;
+    const currentState = element.style.visibility;
     const newState = states.find(state => state !== currentState) as string;
-    this.explanation.style.visibility = newState;
-  }}
+    element.style.visibility = newState;
+  }
+
+  private togglePasswordVisibility() {
+    this.password.type = this.password.type === 'password' ? 'text' : 'password';
+  }
 
 }

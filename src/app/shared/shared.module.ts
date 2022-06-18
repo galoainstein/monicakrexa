@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ErrorMsgComponent } from './error-msg/error-msg.component';
 import { InputFieldComponent } from './input-field/input-field.component';
+import { SquaredButtonComponent } from './buttons/squared-button/squared-button.component';
+import { TextButtonComponent } from './buttons/text-button/text-button.component';
 
 @NgModule({
   imports: [
@@ -16,12 +18,16 @@ import { InputFieldComponent } from './input-field/input-field.component';
   declarations: [
     ErrorMsgComponent,
     InputFieldComponent,
-    ShopkeepersComponent
+    ShopkeepersComponent,
+    SquaredButtonComponent,
+    TextButtonComponent
   ],
   exports: [
     ErrorMsgComponent,
     InputFieldComponent,
-    ShopkeepersComponent
+    ShopkeepersComponent,
+    SquaredButtonComponent,
+    TextButtonComponent
   ],
   providers: []
 })

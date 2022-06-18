@@ -8,6 +8,8 @@ import { SharedModule } from '../shared/shared.module';
 import { FormComponent } from './form/form.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { LoginComponent } from './login/login.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { VisualizePdfComponent } from './catalogue/visualize-pdf/visualize-pdf.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     FormComponent,
     ThanksComponent,
-    LoginComponent
+    LoginComponent,
+    CatalogueComponent,
+    VisualizePdfComponent
   ],
   exports: [FormComponent]
 })

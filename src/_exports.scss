@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+
+:export {
+  mainColorPrimary: $main-color-primary;
+  mainColorSecondary: $main-color-secondary;
+  whitePrimary: $white-primary;
+  whiteSecondary: $white-secondary;
+  greyPrimary: $grey-primary;
+  greySecondary: $grey-secondary;
+  blackPrimary: $black-primary;
+  whiteText: $white-text;
+  greenPrimary: $green-primary;
+  greenSecondary: $green-secondary;
+  bluePrimary: $blue-primary;
+  yellowPrimary: $yellow-primary;
+  orangePrimary: $orange-primary;
+  redPrimary: $red-primary;
+  redSecondary: $red-secondary;
+}

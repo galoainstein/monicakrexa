@@ -51,16 +51,16 @@
         }
         .signUp{
             background-color: $green-secondary;
-            color: $white-color;
+            color: $white-primary;
             &:hover{
                 background-color:$green-primary;
             }
         }
         .login{
-            background-color: $white-color;
+            background-color: $white-primary;
             color: $green-secondary;
             &:hover{
-                background-color:$hover-white;
+                background-color:$white-secondary;
             }
         }
     }

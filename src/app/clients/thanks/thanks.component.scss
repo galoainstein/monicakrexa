@@ -2,12 +2,12 @@
 
 .content{
     margin-top: 100px;
-    color: $white-color;
+    color: $white-primary;
     text-align: center;
     padding: 0 50px;
 
     h2{
-        color: $secondary-color;
+        color: $main-color-primary;
         font-family: $secondary-font;
         font-size: 3vw;
     }
@@ -23,11 +23,11 @@
     }
 
     .progress{
-        background-color: $grey;
+        background-color: $grey-primary;
         margin: 0 35vw;
         height: 2px;
         .progress-bar{
-            background-color: $white-color;
+            background-color: $white-primary;
         }
     }
 }
@@ -52,7 +52,7 @@
 
 
 // Define vars we'll be using
-$brand-success: $secondary-color;
+$brand-success: $main-color-primary;
 $loader-size: 7em;
 $check-height: $loader-size/2;
 $check-width: $check-height/2;

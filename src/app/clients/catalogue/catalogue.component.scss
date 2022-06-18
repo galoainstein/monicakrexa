@@ -1,0 +1,26 @@
+@import "../../../variables.scss";
+
+.full-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: $main-color-primary;
+    font-family: $secondary-font;
+    font-size: 2.5em;
+}
+
+.content{
+    margin-top: 100px;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 270px;
+    max-width: 100%;
+}

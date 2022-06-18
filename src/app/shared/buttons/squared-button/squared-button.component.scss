@@ -1,0 +1,16 @@
+@import "../../../../variables.scss";
+
+button.squared{
+    margin: 0 5px;
+    padding: 5px;
+    //min-height: 30px;
+    height: 100%;
+    //width: 100%;
+    //padding: 0 50%;
+    aspect-ratio: 1 / 1;
+    font-size: auto;
+    font-family: $tertiary-font;
+    border: 0;
+    border-radius: 5px;
+    transition: .5s;
+}

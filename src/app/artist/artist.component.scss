@@ -8,14 +8,14 @@
     .title{
         font-family: $primary-font;
         font-size: 3em;
-        color: $secondary-color;
+        color: $main-color-primary;
     }
 
     .text{
         color: $white-text;
 
         .description{
-            border-left: 11px solid $secondary-color;
+            border-left: 11px solid $main-color-primary;
             padding-left: 10px;
             margin-bottom: 2vw;
 
@@ -37,7 +37,7 @@
             font-size: 1.1vw;
 
             span{
-                color: $secondary-color;
+                color: $main-color-primary;
             }
         }
 

@@ -1,11 +1,12 @@
-$primary-color: black;
-$secondary-color: #E95168;
-$tertiary-color: #e77a8a;
+$main-color-primary: #E95168;
+$main-color-secondary: #e77a8a;
 
-$white-color: white;
-$hover-white: rgb(206, 206, 206);
-$dark-grey: #1A1A1A;
-$grey: #2e2e2e;
+$white-primary: white;
+$white-secondary: rgb(206, 206, 206);
+$grey-primary: #2e2e2e;
+$grey-secondary: #1A1A1A;
+$black-primary: black;
+$white-text: rgb(226, 226, 226);
 
 $green-primary: #2DAB66;
 $green-secondary: #178a4a;
@@ -13,8 +14,8 @@ $blue-primary: #1173B4;
 $yellow-primary: #FED43F;
 $orange-primary: #F16D2D;
 $red-primary: #aa3131;
+$red-secondary: #eb2020;
 
-$white-text: rgb(226, 226, 226);
 
 $primary-font: 'Hubballi', sans-serif;
 $secondary-font: 'Dosis', sans-serif;

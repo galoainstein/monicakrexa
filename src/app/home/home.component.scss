@@ -3,7 +3,7 @@
 
 
 .social-media{
-    background-color: $secondary-color;
+    background-color: $main-color-primary;
     height: 100px;
     padding: 20px;
 
@@ -26,13 +26,13 @@
         img{
             max-height: 50px;
             margin: 5px;
-            background-color: $white-color;
+            background-color: $white-primary;
             border-radius: 50%;
             padding: 5px;
             transition: .5s;
 
             &:hover{
-                background-color: $hover-white;
+                background-color: $white-secondary;
             }
         }
     }

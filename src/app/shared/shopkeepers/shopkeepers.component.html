@@ -11,7 +11,11 @@
         </div>
     </div>
     <div class="buttons">
-        <button class="signUp" (click)="sendTo('/clients')" [hidden]="!showSignUp">TENHO LOJA FÍSICA E QUERO CADASTRAR</button>
-        <button class="login" (click)="sendTo('/clients/login')">ESTOU CADASTRADO E TENHO CHAVE DE ACESSO</button>
+        <app-text-button text="TENHO LOJA FÍSICA E QUERO CADASTRAR"
+        id="signUp" [hidden]="!showSignUp"></app-text-button>
+        <app-text-button color="mainColor" background="white" text="TENHO CHAVE DE ACESSO"
+        id="login"></app-text-button>
+        <!-- <button class="signUp" (click)="sendTo('/clients')" [hidden]="!showSignUp">TENHO LOJA FÍSICA E QUERO CADASTRAR</button>
+        <button class="login" (click)="sendTo('/clients/login')">ESTOU CADASTRADO E TENHO CHAVE DE ACESSO</button> -->
     </div>
 </div>
