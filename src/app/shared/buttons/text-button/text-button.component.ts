@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 import { ScssImportsService } from '../../services/scss-imports.service';
 
@@ -17,7 +18,8 @@ export class TextButtonComponent implements OnInit {
   private textButton: HTMLButtonElement
 
   constructor(
-    private scssImportsService: ScssImportsService
+    private scssImportsService: ScssImportsService,
+    private translate: TranslateService
   ) { }
 
   ngOnInit(): void {
@@ -34,8 +36,6 @@ export class TextButtonComponent implements OnInit {
       this.textButton.style.backgroundColor = this.getColors().background;
       this.textButton.style.color = this.getColors().color;
     })
-
-    console.log(this.getColors());
   }
 
   private getColors(): {background: string, color: string} {

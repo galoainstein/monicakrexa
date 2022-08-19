@@ -1,0 +1,150 @@
+{
+  "artist": {
+    "title": "A ARTISTA",
+    "description": "ARGENTINA DE NASCIMENTO E BUZIANA POR ADOÇÃO, MONICA KREXA É ADVOGADA E ARTISTA PLÁSTICA E, DESDE SEMPRE, DEMONSTROU SUA PAIXÃO PELA ARTE.",
+    "paragraphs": {
+      "one": "Trabalha com alumínio desde 1986, quando o conheceu por acaso, em sua terra natal, Buenos Aires, dando início a uma larga história de muito trabalho e grandes conquistas.",
+      "two": "No ano de 2002 chega em Búzios e começa a vender suas peças na praia, despertando a curiosidade e desejo das pessoas por tudo que apresentava. Desde então, sua carreira segue em ascensão, tendo começado a participar de feiras importantes como a Fashion Rio, conquistando o mercado brasileiro. Mais tarde se apresenta em feiras internacionais como Bijorhca, que acontece em Paris (França); Homi, em Milano (Itália), atraindo gente do mundo todo e ganhando destaque no universo internacional da moda."
+    },
+    "more": "QUER SABER MAIS?",
+    "mentions": "CONFIRA AS MENÇÕES:"
+  },
+  "sustainability": {
+    "title": "ARTE SUSTENTÁVEL",
+    "description": "COM O CONCEITO DE SUSTENTABILIDADE COMO FILOSOFIA DE VIDA, O ALUMÍNIO É O ASPECTO DIFERENCIAL DA MARCA: ECOLOGICAMENTE CORRETO, ELE PODE SER RECICLADO INFINITAS VEZES.",
+    "paragraphs": {
+      "one": "Seu atelier localizado em Búzios, foi inteiramente planejado para cuidar do meio ambiente. Até mesmo o telhado, que é feito com membranas ecológicas adaptadas com um curioso sistema de garrafas recicladas, para atrair luz solar e não utilizar luz elétrica.",
+      "two": "A água da chuva é captada em uma cisterna especial, filtrada e usada para lavar todo material utilizado na produção das peças. Todo cuidado com o meio ambiente se faz presente desde o começo até o final da elaboração, totalmente artesanal, de cada uma das peças."
+    },
+    "cards": {
+      "artisanal": {
+        "title": "PEÇAS ARTESANAIS",
+        "text": "Todas as nossas peças são feitas a mão, uma a uma, com todo amor e cuidado."
+      },
+      "chemical": {
+        "title": "SEM QUÍMICOS",
+        "text": "Não são utilizados químicos de nenhum tipo na elaboração das nossas peças."
+      },
+      "mechanical": {
+        "title": "ENERGIA MECÂNICA",
+        "text": "A maioria das nossas máquinas funcionam através de força mecânica, aliviando o uso de energia elétrica."
+      },
+      "light": {
+        "title": "LUZ NATURAL",
+        "text": "No teto do nosso atelier, instalamos garrafas pet recicladas que permitem a passagem de luz natural."
+      },
+      "recycle": {
+        "title": "REÚSO DE MATERIAIS",
+        "text": "Depois de um rigoroso processo de seleção, os materiais excedentes são reutilizados."
+      },
+      "water": {
+        "title": "RECOLEÇÃO DE ÁGUA",
+        "text": "A água de chuva é captada por uma cisterna especial, e usada para lavar os materiais."
+      }
+    }
+  },
+  "color": {
+    "title": "COR E ORIGINALIDADE",
+    "description": "A MARCA MONICA KREXA SE INSPIRA EM UM DINAMISMO E EXUBERÂNCIA TIPICAMENTE BRASILEIRO, DANDO VIDA A UM ESTILO IRREVERENTE, DIVERTIDO, COLORIDO E ORIGINAL.",
+    "paragraphs": {
+      "one": "As peças da Monica encantam por sua ampla gama de cores que fazem com que todas elas sejam únicas. O processo para colorir as peças é bastante complexo, exigindo muita técnica, habilidade e paciência para atingir a beleza desenhada em cada uma dessas joias.",
+      "two": "Seu material é o alumínio, com o qual modela as coleções que combinam arte e sustentabilidade ao mesmo tempo. As cores do alumínio nunca escurecem e, por isso, as peças podem ser usadas na praia, são resistentes ao sol e nunca oxidam."
+    },
+    "anodized": {
+      "title": "ANODIZADO",
+      "paragraphs": {
+        "one": "O processo para dar cores as peças de alumínio é chamado de \"anodização\". Trata-se de um complexo sistema que cria uma camada de proteção sobre a superfície das peças, conferindo-lhes um fino acabamento que aporta dureza e cor.",
+        "two": "Mesmo após este processo as peças seguem resistentes ao sol, não enferrujam e não descascam a pintura. Este procedimento é ecológico, pois além de utilizar produtos não tóxicos, a tinta excedente da submersão das peças é recuperada, reciclada e reutilizada.",
+        "three": "É uma infinidade de cores que podem ser escolhidas e combinadas!"
+      }
+    },
+    "maintaining": {
+      "title": "COMO CUIDAR DA SUA PEÇA",
+      "cards": {
+        "friction": {
+          "text": "Evite o atrito com outros objetos que possam causar \"ferimentos\" na peça. Não guarde sua joia dentro da bolsa com chave, moedas ou outros objetos metálicos, pois a mesma pode sofrer arranhões."
+        },
+        "time": {
+          "text": "Com o passar do tempo, o desgaste natural é inevitável... Apenas as peças de alumínio na cor natural poderão se manter com as mesmas aparências. Os cordões podem ter variação no tempo de vida útil. O uso de perfumes ou outros fatores úmidos podem acelerar o desgaste."
+        },
+        "wash": {
+          "text": "Caso precisem de limpeza, é só passar um pano umedecido e sabão. Somente as joias em cores naturais de alumínio suportam uma lavagem mais agressiva. Se desejar dar brilho e renovar o acabamento, pode lavar a peça com esponja e sabão."
+        },
+        "travel": {
+          "text": "Para transportar as peças na mala ou levar em viagem, recomendo colocá-las em saquinhos de tecido para evitar qualquer atrito."
+        }
+      },
+      "warningTexts": {
+        "one": "SUA PEÇA:",
+        "two": "É RESISTENTE À ÁGUA",
+        "three": "É RESISTENTE AO SOL",
+        "four": "NÃO ESCURECE",
+        "five": "NÃO ENFERRUJA",
+        "six": "É LIVRE DE NÍQUEL"
+      }
+    }
+  },
+  "world": {
+    "title": "ARTE PARA O MUNDO",
+    "description": "INCLUSÃO E VERSATILIDADE SÃO CARACTERÍSTICAS PRÓPRIAS DA MARCA QUE PRODUZ PEÇAS REGULÁVEIS, PENSADAS E DESENHADAS PARA ADAPTAR-SE À FORMA E AO TAMANHO DE TODOS QUE QUEIRAM USÁ-LAS.",
+    "paragraphs": {
+      "one": "Através da escolha do alumínio, a designer sai em busca de um mercado que não é exclusivamente elitista, desenvolvendo assim, coleções bem acessíveis. É neste momento que a artista aplica sua técnica de joalheira para o alumínio, metal com um custo menor quando comparado a outros metais nobres, inusitado para o mundo da moda.",
+      "two": "A marca Monica Krexa está presente em diferentes museus de arte contemporânea como: o Museu do Amanhã, no Rio de Janeiro, no Brasil; Museum of Contemporary Art Chicago nos Estados Unidos; Museum of Contemporary Art Berlin, na Alemanha e na galeria de arte Dar Al-Anda, na Jordânia. Suas peças são vendidas em todo Brasil, parte do Sul da América, Europa, Austrália e Israel."
+    }
+  },
+  "buyers": {
+    "title": "LOJISTAS",
+    "description": "*Pronta Entrega: o cliente será atendido por um representante que tem estoque das nossas peças para realizar a entrega imediata do produto escolhido.",
+    "paragraphs": {
+      "one": "Não fazemos vendas a varejo. Atendemos ATACADO EXCLUSIVAMENTE A LOJAS FÍSICAS.",
+      "two": "Vendas ao Exterior: Solicite login e senha para acessar ao nosso catálogo.",
+      "three": "Dentro do Brasil: Trabalhamos com",
+      "green": "PRONTA ENTREGA"
+    },
+    "buttons": {
+      "signUp": "TENHO LOJA FÍSICA E QUERO CADASTRAR",
+      "login": "TENHO CHAVE DE ACESSO"
+    },
+    "form": {
+      "title": "FAÇA O SEU CADASTRO",
+      "required": "*Itens obrigatórios",
+      "storeName": "Nome da loja",
+      "name": "Nome do(a) representante",
+      "cnpj": "CNPJ (somente para lojas no Brasil)",
+      "email": "Email",
+      "phone": "Telefone",
+      "site": "Site",
+      "instagram": "Instagram",
+      "social": "Outras redes sociais",
+      "address": "Endereço completo",
+      "message": "Mensagem",
+      "submit": "ENVIAR CADASTRO",
+      "errorMessages": {
+        "required": "{{field}} é obrigatório.",
+        "minlength": "{{field}} precisa ter no mínimo {{requiredValue}} caracteres.",
+        "maxlength": "{{field}} precisa ter no máximo {{requiredValue}} caracteres.",
+        "email": "Email inválido!",
+        "pattern": "Campo inválido"
+      }
+    },
+    "thanks": {
+        "title": "OBRIGADO PELO CADASTRO",
+        "subtitle": "ENTRAREMOS EM CONTATO EM BREVE",
+        "text": "Redirecionando para a página inicial..."
+    },
+    "login": {
+      "incorrect": "X Senha incorreta.",
+      "unknown": "Não sei a senha.",
+      "explanation": {
+        "title": "Não tem uma chave de acesso?",
+        "link": "Clique aqui", 
+        "afterLink": "para saber mais e preencher o cadastro.",
+        "text": "Caso já tenha feito o cadastro, procure a chave de acesso na sua caixa de entrada de email, e lembre de verificar a caixa de spam! Caso o problema persista, entre em contato conosco."
+      }
+    },
+    "catalogue": {
+      "title": "CATÁLOGO MONICA KREXA",
+      "view": "VER CATÁLOGO"
+    }
+  }
+}

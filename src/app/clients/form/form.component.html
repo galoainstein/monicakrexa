@@ -1,63 +1,99 @@
-<app-shopkeepers [showSignUp]="false"></app-shopkeepers>
+<app-buyers [showSignUp]="false"></app-buyers>
 
 <form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
-  <h5>FAÇA O SEU CADASTRO</h5>
-  <p class="required-specs">*Itens obrigatórios</p>
+  <h5>{{ 'buyers.form.title' | translate }}</h5>
+  <p class="required-specs">{{ 'buyers.form.required' | translate }}</p>
 
-  <app-input-field class="field" formControlName="nomeLoja"
-    [classeCss]="aplicaCssErro('nomeLoja')"
-    id="nomeLoja" label="Nome da Loja" [control]="getControl('nomeLoja')"
+  <app-input-field
+    class="field"
+    formControlName="storeName"
+    [classeCss]="aplicaCssErro('storeName')"
+    id="storeName"
+    [control]="getControl('storeName')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="nomeRepresentante"
-    [classeCss]="aplicaCssErro('nomeRepresentante')"
-    id="nomeRepresentante" label="Nome do(a) Representante" [control]="getControl('nomeRepresentante')"
+  <app-input-field
+    class="field"
+    formControlName="name"
+    [classeCss]="aplicaCssErro('name')"
+    id="name"
+    [control]="getControl('name')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="cnpj"
-    [classeCss]="aplicaCssErro('cnpj')" [isRequired]="false"
-    id="cnpj" label="CNPJ (Somente para lojas no Brasil)" [control]="getControl('cnpj')"
+  <app-input-field
+    class="field"
+    formControlName="cnpj"
+    [classeCss]="aplicaCssErro('cnpj')"
+    [isRequired]="false"
+    id="cnpj"
+    [control]="getControl('cnpj')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="email"
+  <app-input-field
+    class="field"
+    formControlName="email"
     [classeCss]="aplicaCssErro('email')"
-    id="email" label="Email" [control]="getControl('email')"
+    id="email"
+    [control]="getControl('email')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="telefone"
-    [classeCss]="aplicaCssErro('telefone')"
-    id="telefone" label="Telefone" [control]="getControl('telefone')"
+  <app-input-field
+    class="field"
+    formControlName="phone"
+    [classeCss]="aplicaCssErro('phone')"
+    id="phone"
+    [control]="getControl('phone')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="site"
-    [classeCss]="aplicaCssErro('site')" [isRequired]="false"
-    id="site" label="Site" [control]="getControl('site')"
+  <app-input-field
+    class="field"
+    formControlName="site"
+    [classeCss]="aplicaCssErro('site')"
+    [isRequired]="false"
+    id="site"
+    [control]="getControl('site')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="instagram"
+  <app-input-field
+    class="field"
+    formControlName="instagram"
     [classeCss]="aplicaCssErro('instagram')"
-    id="instagram" label="Instagram" [control]="getControl('instagram')"
+    id="instagram"
+    [control]="getControl('instagram')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="outrasRedes"
-    [classeCss]="aplicaCssErro('outrasRedes')" [isRequired]="false"
-    id="outrasRedes" label="Outras Redes Sociais" [control]="getControl('outrasRedes')"
+  <app-input-field
+    class="field"
+    formControlName="social"
+    [classeCss]="aplicaCssErro('social')"
+    [isRequired]="false"
+    id="social"
+    [control]="getControl('social')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="endereco"
-    [classeCss]="aplicaCssErro('endereco')"
-    id="endereco" label="Endereço Completo" [control]="getControl('endereco')"
+  <app-input-field
+    class="field"
+    formControlName="address"
+    [classeCss]="aplicaCssErro('address')"
+    id="address"
+    [control]="getControl('address')"
   ></app-input-field>
 
-  <app-input-field class="field" formControlName="mensagem"
-    [classeCss]="aplicaCssErro('mensagem')" [isTextArea]="true"
-    id="mensagem" label="Mensagem" [control]="getControl('mensagem')"
+  <app-input-field
+    class="field"
+    formControlName="message"
+    [classeCss]="aplicaCssErro('message')"
+    [isTextArea]="true"
+    id="message"
+    [control]="getControl('message')"
   ></app-input-field>
 
   <!-- <button type="submit" class="btn btn-submit">ENVIAR CADASTRO</button> -->
-  <app-text-button type="submit" id="submitSignUp"
-  text="ENVIAR CADASTRO"></app-text-button>
-
+  <app-text-button
+    type="submit"
+    id="submitSignUp"
+    [text]="submitText"
+  ></app-text-button>
 </form>
 
 <!-- <span style="color:white">{{ formulario.value | json }}</span> -->

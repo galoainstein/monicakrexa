@@ -1,3 +1,4 @@
+import { TranslateModule } from '@ngx-translate/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ColorComponent } from './color.component';
@@ -13,7 +14,8 @@ import { MaintainingComponent } from './maintaining/maintaining.component';
     MaintainingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   exports: [
     ColorComponent

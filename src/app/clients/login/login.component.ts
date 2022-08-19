@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { LoginService } from 'src/app/shared/services/login.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
   unknown: HTMLAnchorElement;
 
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    public translate: TranslateService
   ) { }
 
   ngOnInit(): void {

@@ -10,6 +10,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { LoginComponent } from './login/login.component';
 import { CatalogueComponent } from './catalogue/catalogue.component';
 import { VisualizePdfComponent } from './catalogue/visualize-pdf/visualize-pdf.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { VisualizePdfComponent } from './catalogue/visualize-pdf/visualize-pdf.c
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    ClientsRoutingModule
+    ClientsRoutingModule,
+    TranslateModule
   ],
   declarations: [
     FormComponent,

@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import * as CryptoJS from 'crypto-js';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LoginService {
-
   private text: string = 'love is all you need';
-  private encryptedText: string = 'U2FsdGVkX1+jordXTdOTn4DQOpojq47N0fdClZ0wXGU=';
+  private encryptedText: string =
+    'U2FsdGVkX1+jordXTdOTn4DQOpojq47N0fdClZ0wXGU=';
 
-  constructor() { }
+  constructor() {}
 
   public validatePassword(password: string): boolean {
     return this.decrypt(this.encryptedText) === password;
@@ -18,8 +18,8 @@ export class LoginService {
   public attemptLogin(password: string): boolean {
     if (this.validatePassword(password)) {
       console.log('Login successful');
-      window.location.pathname = `/clients/login/${password}`;
-      return true
+      window.location.pathname = `/buyers/login/${password}`;
+      return true;
     }
     console.log('Login failed');
     return false;
@@ -29,9 +29,9 @@ export class LoginService {
   //   return CryptoJS.AES.encrypt(value, this.text.trim()).toString();
   // }
 
-  private decrypt(textToDecrypt : string){
-    return CryptoJS.AES.decrypt(textToDecrypt, this.text.trim()).toString(CryptoJS.enc.Utf8);
+  private decrypt(textToDecrypt: string) {
+    return CryptoJS.AES.decrypt(textToDecrypt, this.text.trim()).toString(
+      CryptoJS.enc.Utf8
+    );
   }
-
-
 }

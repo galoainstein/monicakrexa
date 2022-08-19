@@ -1,0 +1,30 @@
+<div class="container">
+  <h2 class="title">{{ 'buyers.title' | translate }}</h2>
+  <div class="content">
+    <div class="text">
+      <p>{{ 'buyers.paragraphs.one' | translate }}<br/><br/>
+        {{ 'buyers.paragraphs.two' | translate }}<br/><br/>
+        {{ 'buyers.paragraphs.three' | translate }}
+        <span class="green">{{ 'buyers.paragraphs.green' | translate }}</span>.
+      </p>
+      <p class="description">
+        {{ 'buyers.description' | translate }}
+      </p>
+    </div>
+  </div>
+  <div class="buttons">
+    <app-text-button
+      [text]="signUpText"
+      id="signUp"
+      [hidden]="!showSignUp"
+    ></app-text-button>
+    <app-text-button
+      color="mainColor"
+      background="white"
+      [text]="loginText"
+      id="login"
+    ></app-text-button>
+    <!-- <button class="signUp" (click)="sendTo('/buyers')" [hidden]="!showSignUp">TENHO LOJA FÍSICA E QUERO CADASTRAR</button>
+        <button class="login" (click)="sendTo('/buyers/login')">ESTOU CADASTRADO E TENHO CHAVE DE ACESSO</button> -->
+  </div>
+</div>

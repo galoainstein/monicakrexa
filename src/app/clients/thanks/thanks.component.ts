@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { setTokenAutoRefreshEnabled } from 'firebase/app-check';
 
 @Component({
@@ -12,7 +13,9 @@ export class ThanksComponent implements OnInit {
   checkmark: HTMLDivElement;
   progressBar: HTMLDivElement;
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService
+  ) { }
 
   ngOnInit(): void {
 
@@ -24,18 +27,20 @@ export class ThanksComponent implements OnInit {
       this.circleLoader.classList.add('load-complete');
       this.checkmark.style.display = "block"
       setTimeout(() => {
-        this.fillProgessBarAndRedirect(2500);
+        this.fillProgessBar(2500);
+        setTimeout(() => {
+          window.location.pathname = '/'
+        },3500)
       }, 1000);
     },3000);
   }
 
-  private fillProgessBarAndRedirect(time:number){
+  private fillProgessBar(time:number){
     for (let i = 0; i <= 100; i++) {
       setTimeout(() => {
         this.progressBar.style.width = `${i}%`;
       }, time/100 * i);
     }
-    //window.location.pathname = '/'
   }
 
   private add1PercentToProgressBarWidth() {

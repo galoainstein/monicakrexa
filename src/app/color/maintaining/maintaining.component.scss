@@ -1,142 +1,148 @@
 @import "../../../variables.scss";
 
-.container{
-    margin: 0;
-    max-width: fit-content;
-    padding: 7vw 7vw 5vw 7vw;
+.container {
+  margin: 0;
+  max-width: fit-content;
+  padding: 7vw 7vw 5vw 7vw;
 
-    .title{
-        font-family: $primary-font;
-        font-size: 3em;
-        color: $yellow-primary;
-        text-align: left;
-        margin-bottom: 2vw;
+  .title {
+    font-family: $primary-font;
+    font-size: 3em;
+    color: $yellow-primary;
+    text-align: left;
+    margin-bottom: 2vw;
+  }
+
+  .text > p {
+    font-family: $quaternary-font;
+    color: $white-text;
+    font-size: 1.2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .img > img {
+    padding: 4.5vw;
+  }
+
+  .friction > .img > img {
+    content: url("../../../assets/images/color/maintaining/friction.svg");
+  }
+  .time > .img > img {
+    content: url("../../../assets/images/color/maintaining/time.svg");
+  }
+  .wash > .img > img {
+    content: url("../../../assets/images/color/maintaining/wash.svg");
+  }
+  .travel > .img > img {
+    content: url("../../../assets/images/color/maintaining/travel.svg");
+  }
+
+  .note {
+    width: 100%;
+    background-color: $yellow-primary;
+    margin: 2vw 0;
+
+    h4 {
+      font-family: $quinary-font;
+      font-size: 1.3vw;
+      padding: 0.7vw 4vw;
+      text-align: center;
+      color: $black-primary;
     }
 
-    .text > p{
-        font-family: $quaternary-font;
-        color: $white-text;
-        font-size: 1.2vw;
-        text-align: center;
-        margin-bottom: 2vw;
+    span {
+      color: $main-color-primary;
     }
-
-    .img > img{
-        padding: 4.5vw;
-    }
-
-    .friction > .img > img{content: url("../../../images/color/maintaining/friction.svg");}
-    .time > .img > img{content: url("../../../images/color/maintaining/time.svg");}
-    .wash > .img > img{content: url("../../../images/color/maintaining/wash.svg");}
-    .travel > .img > img{content: url("../../../images/color/maintaining/travel.svg");}
-
-    .note{
-        width: 100%;
-        background-color: $yellow-primary;
-        margin: 2vw 0;
-
-        h4{
-            font-family: $quinary-font;
-            font-size: 1.3vw;
-            padding: .7vw 4vw;
-            text-align: center;
-        }
-        
-        span{
-            color: $main-color-primary;
-        }
-    }
-
+  }
 }
 
 @media screen and (min-width: 670px) {
-    .container {
-        .content{
-            display: flex;
-            justify-content: space-between;
+  .container {
+    .content {
+      display: flex;
+      justify-content: space-between;
 
-            .item{
-                width: 20%;
-            }
+      .item {
+        width: 20%;
+      }
 
-            .divider{
-                width: .22vw;
-                border-radius: .11vw;
-                background-color: $yellow-primary;
-                margin: 0;
-                padding: 0;
-                margin-top: 5vw;
-            }
-        }
-    
-        
+      .divider {
+        width: 0.22vw;
+        border-radius: 0.11vw;
+        background-color: $yellow-primary;
+        margin: 0;
+        padding: 0;
+        margin-top: 5vw;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 960px) and (min-width: 670px) {
-    .container > .content > .item > .text > p{
-        font-size: 1.5vw;
-    }
-    .container > .note > h4{
-        font-size: 2vw;
-    }
+  .container > .content > .item > .text > p {
+    font-size: 1.5vw;
+  }
+  .container > .note > h4 {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 670px) {
-    .container {
-        .title{
-            font-size: 3em;
-        }
-
-        .text{
-            p{
-                font-size: 15px;
-            }
-        }
-
-        .content{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            .item{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 7vw;
-
-                img{
-                    max-width: 22vw;
-                    min-width: 22vw;
-                }
-
-                .text{
-                    width: 55vw;
-                    margin: 0 3vw;
-                }
-            }
-
-            .divider{
-                height: .22vw;
-                border-radius: .11vw;
-                background-color: $yellow-primary;
-                margin: 0;
-                padding: 0;
-                margin-top: 5vw;
-            }
-        }  
-        .note > h4{
-            margin-top: 7vw;
-            font-size: 15px;
-            padding: .9vw 4vw;
-        }
+  .container {
+    .title {
+      font-size: 3em;
     }
+
+    .text {
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .item {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 7vw;
+
+        img {
+          max-width: 22vw;
+          min-width: 22vw;
+        }
+
+        .text {
+          width: 55vw;
+          margin: 0 3vw;
+        }
+      }
+
+      .divider {
+        height: 0.22vw;
+        border-radius: 0.11vw;
+        background-color: $yellow-primary;
+        margin: 0;
+        padding: 0;
+        margin-top: 5vw;
+      }
+    }
+    .note > h4 {
+      margin-top: 7vw;
+      font-size: 15px;
+      padding: 0.9vw 4vw;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .container > .content > .item > .text{
-        width: 50vw;
-    }
+  .container > .content > .item > .text {
+    width: 50vw;
+  }
 }
