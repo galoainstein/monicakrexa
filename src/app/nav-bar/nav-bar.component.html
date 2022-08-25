@@ -63,48 +63,15 @@
             >{{ "buyers.title" | translate }}</a
           >
         </li>
-        <li class="nav-item flags">
-          <!-- <div class="flag-buttons"> -->
-            <button (click)="selectLang('pt')" class="flag-holder flag-br first">
-              <img class="flag" src="../../assets/images/flags/br.png" alt="">
-            </button>
-            <button (click)="selectLang('en')" class="flag-holder flag-gb last">
-              <img class="flag flag-gb" src="../../assets/images/flags/gb.png" alt="">
-            </button>
-          <!-- </div> -->
-          <!-- <mat-select placeholder="How Many?">
-            <mat-option>One</mat-option>
-            <mat-option>Two</mat-option>
-            <mat-option>Three</mat-option>
-            <mat-option>Four</mat-option>
-            <mat-option>Five</mat-option>
-        </mat-select> -->
-          <!-- <mat-form-field>
-            <mat-label>Select Categories:</mat-label>
-            <mat-select name="teste3">
-              <mat-option value="123">
-                <img with="20" height="20" src="../../assets/images/flags/br.png">
-                teste
-              </mat-option>
-              <mat-option value="1234">
-                <img with="20" height="20" src="../../assets/images/flags/br.png">
-                teste2
-              </mat-option>
-            </mat-select>
-          </mat-form-field> -->
-          <!-- <select class="selectpicker" data-width="fit">
-            <button class="teste"></button>
-            <option selected class="teste">
-              
-            </option>
-            <option value="AU" data-iconurl="../../assets/images/flags/br.png">AU some text</option>  
-            <option>
-              
-            </option>
-          </select> -->
-          <!-- <i class="flag flag-united-states"></i> -->
-        </li>
       </ul>
+    </div>
+    <div class="flags">
+      <button (click)="selectLang('pt')" class="flag-holder flag-br first">
+        <img class="flag" src="../../assets/images/flags/br.png" alt="">
+      </button>
+      <button (click)="selectLang('en')" class="flag-holder flag-gb last">
+        <img class="flag flag-gb" src="../../assets/images/flags/gb.png" alt="">
+      </button>
     </div>
   </div>
 </nav>
