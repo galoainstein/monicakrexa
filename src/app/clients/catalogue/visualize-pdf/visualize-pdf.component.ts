@@ -11,7 +11,14 @@ import { LoginService } from 'src/app/shared/services/login.service';
 export class VisualizePdfComponent implements OnInit {
 
   private password: string;
-  private file: string;
+  public file: ''|'full'|'urban';
+  private iframe: HTMLIFrameElement;
+
+  public links = {
+    '': 'nothing',
+    full: 'https://drive.google.com/file/d/1MgxmpJx92iSfOJBKBcRWfj6GN7KATVD7/preview',
+    urban: 'https://drive.google.com/file/d/1_LISl3lsICIIJS3Kw24xAqs_sZu2EfHM/preview'
+  }
 
   constructor(
     private loginService: LoginService,
@@ -31,7 +38,10 @@ export class VisualizePdfComponent implements OnInit {
     if (param) {
       const paramArray: string[] = param.split('.')
       this.password = paramArray[0];
-      this.file = paramArray[1];
+      this.file = paramArray[1] as ''|'full'|'urban';
+
+      this.iframe = document.querySelector(`#${this.file}`) as HTMLIFrameElement;
+      this.iframe.hidden = false;
     } else {
       this.password = '';
       this.file = '';

@@ -12,6 +12,7 @@ export class CatalogueComponent implements OnInit {
 
   private password: string;
   private downloadButton: HTMLElement;
+  private downloadUrban: HTMLElement;
 
   private fullCatalogueURL: string = '../../../catalogues/CATALOGUE MK.pdf'
 
@@ -32,6 +33,12 @@ export class CatalogueComponent implements OnInit {
     this.downloadButton.addEventListener('click', () => {
       window.location.pathname = `/clients/login/view/${this.password}.full`
     })
+    
+    this.downloadUrban = document.querySelector('#download-catalogue-urban') as HTMLElement;
+    this.downloadUrban.addEventListener('click', () => {
+      window.location.pathname = `/clients/login/view/${this.password}.urban`
+    })
+    
   }
 
   private setPassword(){
