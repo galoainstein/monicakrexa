@@ -143,7 +143,8 @@
       }
     },
     "catalogue": {
-      "title": "CATÁLOGO MONICA KREXA",
+      "full": "CATÁLOGO MONICA KREXA",
+      "urban": "CATÁLOGO COLEÇÃO URBANA",
       "view": "VER CATÁLOGO"
     }
   }

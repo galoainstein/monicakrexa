@@ -63,15 +63,17 @@
             >{{ "buyers.title" | translate }}</a
           >
         </li>
+        <li class="nav-item">
+          <div class="flags">
+            <button (click)="selectLang('pt')" class="flag-holder flag-br first">
+              <img class="flag" src="../../assets/images/flags/br.png" alt="">
+            </button>
+            <button (click)="selectLang('en')" class="flag-holder flag-gb last">
+              <img class="flag flag-gb" src="../../assets/images/flags/gb.png" alt="">
+            </button>
+          </div>
+        </li>
       </ul>
-    </div>
-    <div class="flags">
-      <button (click)="selectLang('pt')" class="flag-holder flag-br first">
-        <img class="flag" src="../../assets/images/flags/br.png" alt="">
-      </button>
-      <button (click)="selectLang('en')" class="flag-holder flag-gb last">
-        <img class="flag flag-gb" src="../../assets/images/flags/gb.png" alt="">
-      </button>
     </div>
   </div>
 </nav>
