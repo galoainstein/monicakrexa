@@ -19,7 +19,15 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void { }
 
   public selectLang(lang: string){
-    this.translate.use(lang);
+    let pathname = window.location.pathname;
+    pathname = pathname.replace(/^\/(pt|en)/, `/${lang}`);
+    window.location.pathname = pathname;
+    // this.translate.use(lang);
+  }
+
+  public linkWithLang(link: string){
+    const lang = this.translate.currentLang;
+    return lang + link;
   }
 
 }

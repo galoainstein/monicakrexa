@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import * as CryptoJS from 'crypto-js';
 
 @Injectable({
@@ -9,7 +10,9 @@ export class LoginService {
   private encryptedText: string =
     'U2FsdGVkX1+jordXTdOTn4DQOpojq47N0fdClZ0wXGU=';
 
-  constructor() {}
+  constructor(
+    private translate: TranslateService
+  ) {}
 
   public validatePassword(password: string): boolean {
     return this.decrypt(this.encryptedText) === password;
@@ -18,7 +21,7 @@ export class LoginService {
   public attemptLogin(password: string): boolean {
     if (this.validatePassword(password)) {
       console.log('Login successful');
-      window.location.pathname = `/buyers/login/${password}`;
+      window.location.pathname = `${this.translate.currentLang}/buyers/login/${password}`;
       return true;
     }
     console.log('Login failed');

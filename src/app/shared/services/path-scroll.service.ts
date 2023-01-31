@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +8,10 @@ import { Router } from '@angular/router';
 export class PathScrollService {
   private pagesList = ['artist', 'sustainability', 'color', 'world', 'buyers'];
 
-  constructor(private readonly router: Router) {}
+  constructor(
+    private readonly router: Router,
+    private translate: TranslateService
+  ) {}
 
   public isSelected(page: string) {
     if (window.location.pathname.includes('/' + page)) {
@@ -28,16 +32,19 @@ export class PathScrollService {
   }
 
   public scrollTo(page: string) {
-    if (this.router.url !== '/') {
-      this.router.navigate(['/']);
+    if (this.router.url !== `/${this.translate.currentLang}/home`) {
+      this.router.navigate([`/${this.translate.currentLang}/home`]);
       setTimeout(() => {
         this.scrollTo(page);
       }, 500);
     } else {
       this.addForceSelection(page);
-
+      
+      const currentY = (window.pageYOffset || document.body.scrollTop)  - (document.body.clientTop || 0);
+      document.body.scrollTo({ top: 0 });
       const y = this.calculateYOffset(page);
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      document.body.scrollTo({ top: currentY });
+      document.body.scrollTo({ top: y, behavior: 'smooth' });
 
       this.closeNavbarToggler();
 
@@ -67,13 +74,9 @@ export class PathScrollService {
 
   private calculateYOffset(page: string): number {
     const yOffset = -70;
-    if (page == 'clients') {
-      page = 'buyers';
-    }
     const element = document.querySelector(`app-${page}`) as HTMLElement;
     if (!element) return 0;
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset + window.scrollY;
     return y;
   }
 

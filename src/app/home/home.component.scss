@@ -42,26 +42,48 @@
 
 .carousel-item {
   height: 84vh;
-  // background: repeat center center scroll;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
   object-fit: cover;
 
   &#image-1 {
-    content: url("../../assets/images/home/p1-jpg.jpg");
+    content: url("../../assets/images/home/widescreen/1.webp");
   }
   &#image-2 {
-    content: url("../../assets/images/home/p2-jpg.jpg");
+    content: url("../../assets/images/home/widescreen/2.webp");
   }
   &#image-3 {
-    content: url("../../assets/images/home/p3-jpg.jpg");
+    content: url("../../assets/images/home/widescreen/3.webp");
   }
   &#image-4 {
-    content: url("../../assets/images/home/p4-jpg.jpg");
+    content: url("../../assets/images/home/widescreen/4.webp");
   }
   &#image-5 {
-    content: url("../../assets/images/home/p5-jpg.jpg");
+    content: url("../../assets/images/home/widescreen/5.webp");
   }
+  &#image-6 {
+    content: url("../../assets/images/home/widescreen/6.webp");
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .carousel-item {
+    &#image-1 {
+      content: url("../../assets/images/home/mobile/1.webp");
+    }
+    &#image-2 {
+      content: url("../../assets/images/home/mobile/2.webp");
+    }
+    &#image-3 {
+      content: url("../../assets/images/home/mobile/3.webp");
+    }
+    &#image-4 {
+      content: url("../../assets/images/home/mobile/4.webp");
+    }
+    &#image-5 {
+      content: url("../../assets/images/home/mobile/5.webp");
+    }
+    &#image-6 {
+      content: url("../../assets/images/home/mobile/6.webp");
+    }
+  }
+  
 }

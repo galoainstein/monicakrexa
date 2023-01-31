@@ -5,10 +5,12 @@ import { FormComponent } from './clients/form/form.component';
 import { ClientsModule } from './clients/clients.module';
 
 const routes: Routes = [
-  { path: 'buyers', loadChildren: () => ClientsModule },
-  { path: '', component: SinglePageComponent }
-  //{ path: 'clients', component: FormComponent }
-  // { path: '**', pathMatch: 'full', redirectTo: '/' }
+  { path: 'pt/buyers', loadChildren: () => ClientsModule },
+  { path: 'en/buyers', loadChildren: () => ClientsModule },
+  { path: 'pt/home', component: SinglePageComponent },
+  { path: 'en/home', component: SinglePageComponent },
+  { path: 'en', redirectTo: '/en/home' },
+  { path: '**', pathMatch: 'full', redirectTo: '/pt/home' }
 ];
 
 @NgModule({

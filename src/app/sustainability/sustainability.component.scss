@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 
 .container {
+  position: relative;
   padding: 7vw;
   padding-bottom: 0;
   max-width: fit-content;

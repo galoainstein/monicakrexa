@@ -21,11 +21,11 @@ export class BuyersComponent implements OnInit {
     this.loginButton = document.querySelector('#login') as HTMLElement;
 
     this.signUpButton.addEventListener('click', () => {
-      this.sendTo('/buyers');
+      this.sendTo(this.linkWithLang('/buyers'));
     });
 
     this.loginButton.addEventListener('click', () => {
-      this.sendTo('/buyers/login');
+      this.sendTo(this.linkWithLang('/buyers/login'));
     });
   }
 
@@ -39,5 +39,10 @@ export class BuyersComponent implements OnInit {
 
   get loginText(): string {
     return this.translate.instant('buyers.buttons.login');
+  }
+
+  private linkWithLang(link: string){
+    const lang = this.translate.currentLang;
+    return lang + link;
   }
 }

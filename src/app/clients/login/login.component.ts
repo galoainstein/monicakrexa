@@ -55,4 +55,9 @@ export class LoginComponent implements OnInit {
     this.password.type = this.password.type === 'password' ? 'text' : 'password';
   }
 
+  public linkWithLang(link: string){
+    const lang = this.translate.currentLang;
+    return lang + link;
+  }
+
 }

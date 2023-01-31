@@ -15,7 +15,7 @@
         <div class="explanation" style="visibility: hidden">
             <h3>{{ 'buyers.login.explanation.title' | translate }}</h3>
             <p class="link">
-                <a href="/buyers">{{ 'buyers.login.explanation.link' | translate }}</a> {{ 'buyers.login.explanation.afterLink' | translate }}
+                <a [href]='linkWithLang("/buyers")'>{{ 'buyers.login.explanation.link' | translate }}</a> {{ 'buyers.login.explanation.afterLink' | translate }}
             </p>
             <p class="extra">{{ 'buyers.login.explanation.text' | translate }}</p>
         </div>

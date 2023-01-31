@@ -8,10 +8,24 @@
   max-width: 60vmin;
 }
 
+.container{
+  margin: 0 30px;
+  min-width: calc(100% - 60px);
+}
+
 .flags{
-  position: absolute;
-  top: 30px;
-  right: 20px,
+  padding: 8px 0 8px 10px;
+  min-width: 80px;
+  max-width: 80px;
+  // display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // position: absolute;
+  // top: 30px;
+  // right: 30px,
+  // width: 100%;
+  // display:flex;
+  // align-content:space-between;
 }
 
 .flag {
@@ -20,20 +34,12 @@
 }
 
 .flag-holder{
-  margin: 8px 3px;
+  margin: 0px 3px;
   padding: 0;
   border: 0;
 
   width: 24px;
   height: 18px;
-
-  &.first{
-    margin-left: 20px;
-  }
-
-  // &.last{
-  //   margin-right: 20px;
-  // }
 }
 
 .nav-item, .flags{
@@ -59,7 +65,10 @@ nav.navbar {
 }
 
 .navbar-toggler {
+  position: absolute;
   border: none;
+  right: 20px;
+  top: 30px;
   &:focus {
     box-shadow: none;
   }

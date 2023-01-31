@@ -2,7 +2,7 @@
   class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-light bg-light fixed-top"
 >
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" [href]='linkWithLang("/home")'>
       <img alt="Logo Monica Krexa" id="logo-top" />
     </a>
     <button
@@ -57,7 +57,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="/buyers"
+            [href]='linkWithLang("/buyers")'
             id="buyers"
             [ngClass]="pathScrollService.isSelected('buyers')"
             >{{ "buyers.title" | translate }}</a

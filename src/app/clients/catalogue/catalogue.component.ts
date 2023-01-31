@@ -29,7 +29,7 @@ export class CatalogueComponent implements OnInit {
     this.setPassword()
 
     if (!this.loginService.validatePassword(this.password)){
-      window.location.pathname = '/buyers/login';
+      window.location.pathname = `${this.translate.currentLang}/buyers/login`;
     }
 
     this.viewButtonText = this.translate.instant('buyers.catalogue.view')
@@ -37,12 +37,12 @@ export class CatalogueComponent implements OnInit {
     this.downloadButton = document.querySelector('#download-catalogue') as HTMLElement;
 
     this.downloadButton.addEventListener('click', () => {
-      window.location.pathname = `/buyers/login/view/${this.password}.full`
+      window.location.pathname = `${this.translate.currentLang}/buyers/login/view/${this.password}.full`
     })
     
     this.downloadUrban = document.querySelector('#download-catalogue-urban') as HTMLElement;
     this.downloadUrban.addEventListener('click', () => {
-      window.location.pathname = `/buyers/login/view/${this.password}.urban`
+      window.location.pathname = `${this.translate.currentLang}/buyers/login/view/${this.password}.urban`
     })
     
   }
@@ -56,4 +56,8 @@ export class CatalogueComponent implements OnInit {
     }
   }
 
+  private linkWithLang(link: string){
+    const lang = this.translate.currentLang;
+    return lang + link;
+  }
 }
