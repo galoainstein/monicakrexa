@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "monicakrexa"
+  "defaultProject": "monicakrexa",
+  "cli": {
+    "analytics": false
+  }
 }
