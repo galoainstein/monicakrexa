@@ -1,15 +1,14 @@
 <div class="container">
-    <h2 class="title">A ARTISTA</h2>
+    <h2 class="title">{{ 'artist.title' | translate }}</h2>
     <div class="content">
         <img id="monochromatic" alt="Monica Krexa em branco e preto usando um óculos e um colar de espirais de alumínio na frente de um fundo de madeira com a bandeira do Brasil">
         <img id="colored" alt="Três imagens em uma separadas por cortes diagonais, na primeira um quadro pintado pela artista da Elizabeth Taylor com decorações em alumínio, na segunda a artista com óculos de espirais de alumínio na frente de um fundo de madeira com a bandeira do Brasil, e na terceira folhas verdes">
         <div class="text">
-            <p class="description">ARGENTINA DE NASCIMENTO E BUZIANA POR ADOÇÃO,
-                <br>MONICA KREXA É ADVOGADA E ARTISTA PLÁSTICA E,
-                <br>DESDE SEMPRE, DEMONSTROU SUA PAIXÃO PELA ARTE.</p>
-            <p>Trabalha com alumínio desde 1986, quando conheceu por acaso, em sua terra natal, Buenos Aires, dando início a uma larga história de muito trabalho e grandes conquistas.
-                <br><br> No ano de 2002 chega em Búzios e começa a vender suas peças na praia, despertando a curiosidade e desejo das pessoas por tudo o que apresentava. Desde então, sua carreira segue em ascensão, tendo começado a participar de feiras importantes como a Fashion Rio, conquistando definitivamente o mercado brasileiro. Mais tarde se apresenta em feiras internacionais como Bijorhca, que acontece em Paris (França); Homi, em Milano (Itália), atraindo gente do mundo todo e ganhando destaque no universo internacional da moda.</p>
-            <h3><span>QUER SABER MAIS?</span> CONFIRA AS MENÇÕES:</h3>
+            <p class="description">{{ 'artist.description' | translate }}</p>
+            <p>{{ 'artist.paragraphs.one' | translate }}<br><br>
+                {{ 'artist.paragraphs.two' | translate }}
+            </p>
+            <h3><span>{{ 'artist.more' | translate }}</span> {{ 'artist.mentions' | translate }}</h3>
             <div class="mentions">
                 <button (click)="goToLink('https://blog.igaramodaarte.com.br/a-arte-em-aluminio-de-monica-krexa/')" class="igara">
                     <img alt="Logo da marca Igara" class="logo">

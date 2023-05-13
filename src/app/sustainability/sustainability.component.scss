@@ -1,255 +1,328 @@
 @import "../../variables.scss";
 
-.container{
-    padding: 7vw;
-    padding-bottom: 0;
-    max-width: fit-content;
+.container {
+  position: relative;
+  padding: 7vw;
+  padding-bottom: 0;
+  max-width: fit-content;
 
-    .title{
-        font-family: $primary-font;
-        font-size: 3em;
-        color: $green-primary;
+  .title {
+    font-family: $primary-font;
+    font-size: 3em;
+    color: $green-primary;
+  }
+
+  .content {
+    .text {
+      color: $white-text;
+      margin-bottom: 4vw;
+
+      .description {
+        border-left: 11px solid $green-primary;
+        padding-left: 10px;
+        margin-bottom: 2vw;
+
+        font-family: $tertiary-font;
+        letter-spacing: 0.06em;
+        font-size: 1.5vw;
+        text-align: left;
+      }
+
+      p {
+        font-family: $quaternary-font;
+        font-size: 1.2vw;
+        text-align: justify;
+        margin-bottom: 2vw;
+      }
     }
 
-    .content{
-        .text{
-            color: $white-text;
-            margin-bottom: 4vw;
-    
-            .description{
-                border-left: 11px solid $green-primary;
-                padding-left: 10px;
-                margin-bottom: 2vw;
-    
-                font-family: $tertiary-font;
-                letter-spacing: .06em;
-                font-size: 1.5vw;
-                text-align: left;
-            }
-    
-            p{
-                font-family: $quaternary-font;
-                font-size: 1.2vw;
-                text-align: justify;
-                margin-bottom: 2vw;
-            }
+    .icons {
+      margin-bottom: 40vw;
+      div {
+        position: relative;
+        img {
+          width: 15%;
+          -webkit-transition: opacity 0.5s ease-in-out;
+          -moz-transition: opacity 0.5s ease-in-out;
+          -o-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+          position: absolute;
+          left: 0;
+          &.top:hover,
+          &.top.hover {
+            opacity: 0;
+          }
         }
+        h4,
+        p {
+          text-align: center;
+          position: absolute;
+          color: $grey-secondary;
+          width: 15%;
+          padding: 0 1%;
+        }
+        h4 {
+          font-family: $tertiary-font;
+          padding: 15% 2% 1% 2%;
+          font-size: 2vw;
+        }
+        p {
+          font-family: $quaternary-font;
+          padding-top: 21%;
+          font-size: 1.17vw;
+        }
+      }
 
-        .icons{
-            margin-bottom: 40vw;
-            div{
-                position:relative;
-                img{
-                    width: 15%;
-                    -webkit-transition: opacity .5s ease-in-out;
-                    -moz-transition: opacity .5s ease-in-out;
-                    -o-transition: opacity .5s ease-in-out;
-                    transition: opacity .5s ease-in-out;
-                    position:absolute;
-                    left:0;
-                    &.top:hover, &.top.hover{opacity:0;}
-                }
-                h4, p{
-                    text-align: center;
-                    position: absolute;
-                    color: $grey-secondary;
-                    width: 15%;
-                    padding: 0 1%;
-                }
-                h4{
-                    font-family: $tertiary-font;
-                    padding: 15% 2% 1% 2%;
-                    font-size: 2vw;
-                }
-                p{
-                    font-family: $quaternary-font;
-                    padding-top: 21%;
-                    font-size: 1.17vw;
-                }
-            }
-            
-            #artisanal{
-                position: relative;
-                left: 0;
-                .top{content: url('../../images/sustainability/vertical/hidden/artisanal.png');}
-                .bottom{content: url('../../images/sustainability/vertical/hovered/artisanal.png');}
-            }
-            #chemical{
-                position: relative;
-                left: 17%;
-                .top{content: url('../../images/sustainability/vertical/hidden/chemical.png');}
-                .bottom{content: url('../../images/sustainability/vertical/hovered/chemical.png');}
-            }
-            #mechanical{
-                position: relative;
-                left: 34%;
-                .top{content: url('../../images/sustainability/vertical/hidden/mechanical.png');}
-                .bottom{content: url('../../images/sustainability/vertical/hovered/mechanical.png');}
-            }
-            #light{
-                position: relative;
-                left: 51%;
-                .top{content: url('../../images/sustainability/vertical/hidden/light.png');}
-                .bottom{content: url('../../images/sustainability/vertical/hovered/light.png');}
-            }
-            #recicle{
-                position: relative;
-                left: 68%;
-                .top{content: url('../../images/sustainability/vertical/hidden/recicle.png');}
-                .bottom{content: url('../../images/sustainability/vertical/hovered/recicle.png');}
-            }
-            #water{
-                position: relative;
-                left: 85%;
-                .top{content: url('../../images/sustainability/vertical/hidden/water.png');}
-                .bottom{content: url('../../images/sustainability/vertical/hovered/water.png');}
-            }
+      #artisanal {
+        position: relative;
+        left: 0;
+        .top {
+          content: url("../../assets/images/sustainability/vertical/hidden/artisanal.png");
         }
+        .bottom {
+          content: url("../../assets/images/sustainability/vertical/hovered/artisanal.png");
+        }
+      }
+      #chemical {
+        position: relative;
+        left: 17%;
+        .top {
+          content: url("../../assets/images/sustainability/vertical/hidden/chemical.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/vertical/hovered/chemical.png");
+        }
+      }
+      #mechanical {
+        position: relative;
+        left: 34%;
+        .top {
+          content: url("../../assets/images/sustainability/vertical/hidden/mechanical.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/vertical/hovered/mechanical.png");
+        }
+      }
+      #light {
+        position: relative;
+        left: 51%;
+        .top {
+          content: url("../../assets/images/sustainability/vertical/hidden/light.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/vertical/hovered/light.png");
+        }
+      }
+      #recycle {
+        position: relative;
+        left: 68%;
+        .top {
+          content: url("../../assets/images/sustainability/vertical/hidden/recycle.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/vertical/hovered/recycle.png");
+        }
+      }
+      #water {
+        position: relative;
+        left: 85%;
+        .top {
+          content: url("../../assets/images/sustainability/vertical/hidden/water.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/vertical/hovered/water.png");
+        }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 670px) {
-    .container {
-        .content{
-            .text{
-                .description{
-                    position: absolute;
-                    left: 60vw;
-                    padding-right: 7vw;
-                }
-    
-                p{padding-right: 35vw;}
-            }
-            .icons > #light > p{
-                letter-spacing: -.02vw;
-            }
+  .container {
+    .content {
+      .text {
+        .description {
+          position: absolute;
+          left: 60vw;
+          padding-right: 7vw;
         }
-    
-        .title{
-            font-size: 3em;
-            margin-bottom: 2vw;
+
+        p {
+          padding-right: 35vw;
         }
+      }
+      .icons > #light > p {
+        letter-spacing: -0.02vw;
+      }
     }
+
+    .title {
+      font-size: 3em;
+      margin-bottom: 2vw;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) and (min-width: 670px) {
-    .container > .content > .text{
-        .description{font-size: 1.7vw;}
-        p{font-size: 1.5vw;}
+  .container > .content > .text {
+    .description {
+      font-size: 1.7vw;
     }
+    p {
+      font-size: 1.5vw;
+    }
+  }
 }
 
 @media screen and (max-width: 670px) {
-    .container > .content{
-
-        .text{
-            padding-top: 10px;
-            .description{
-                font-size: 3vw;
-                margin-bottom: 2.1vw;
-            }
-            p{
-                font-size: 13px;
-                margin-bottom: 2.1vw;
-            }
-
-        }
-        .icons{
-            margin-bottom: 72vw;
-            div{
-                img{width: 48%;}
-                h4, p{
-                    text-align: center;
-                    position: absolute;
-                    width: 48%;
-                    padding: 3.5% 2% 1% 20.5%;
-                }
-                h4{
-                    font-size: 2.5vw;
-                }
-                p{
-                    padding-top: 8.5%;
-                    font-size: 1.8vw;
-                }
-            }
-            
-            #artisanal{
-                .top{content: url('../../images/sustainability/horizontal/hidden/artisanal.png');}
-                .bottom{content: url('../../images/sustainability/horizontal/hovered/artisanal.png');}
-                h4{padding-top: 4.5%;}
-                p{padding-top: 9.5%;}
-            }
-            #chemical{
-                left: 52%;
-                .top{content: url('../../images/sustainability/horizontal/hidden/chemical.png');}
-                .bottom{content: url('../../images/sustainability/horizontal/hovered/chemical.png');}
-            }
-            #mechanical{
-                left: 0;
-                top: 24vw;
-                .top{content: url('../../images/sustainability/horizontal/hidden/mechanical.jpeg');}
-                .bottom{content: url('../../images/sustainability/horizontal/hovered/mechanical.png');}
-                h4{padding-top: 2.5%;}
-                p{
-                    padding-top: 7.5%;
-                    letter-spacing: -.04vw;
-                }
-            }
-            #light{
-                left: 52%;
-                top: 24vw;
-                .top{content: url('../../images/sustainability/horizontal/hidden/light.png');}
-                .bottom{content: url('../../images/sustainability/horizontal/hovered/light.png');}
-            }
-            #recicle{
-                left: 0;
-                top: 48vw;
-                .top{content: url('../../images/sustainability/horizontal/hidden/recicle.png');}
-                .bottom{content: url('../../images/sustainability/horizontal/hovered/recicle.png');}
-            }
-            #water{
-                left: 52%;
-                top: 48vw;
-                .top{content: url('../../images/sustainability/horizontal/hidden/water.png');}
-                .bottom{content: url('../../images/sustainability/horizontal/hovered/water.png');}
-            }
-        }
+  .container > .content {
+    .text {
+      padding-top: 10px;
+      .description {
+        font-size: 3vw;
+        margin-bottom: 2.1vw;
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 2.1vw;
+      }
     }
+    .icons {
+      margin-bottom: 72vw;
+      div {
+        img {
+          width: 48%;
+        }
+        h4,
+        p {
+          text-align: center;
+          position: absolute;
+          width: 48%;
+          padding: 3.5% 2% 1% 20.5%;
+        }
+        h4 {
+          font-size: 2.5vw;
+        }
+        p {
+          padding-top: 8.5%;
+          font-size: 1.8vw;
+        }
+      }
+
+      #artisanal {
+        .top {
+          content: url("../../assets/images/sustainability/horizontal/hidden/artisanal.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/horizontal/hovered/artisanal.png");
+        }
+        h4 {
+          padding-top: 4.5%;
+        }
+        p {
+          padding-top: 9.5%;
+        }
+      }
+      #chemical {
+        left: 52%;
+        .top {
+          content: url("../../assets/images/sustainability/horizontal/hidden/chemical.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/horizontal/hovered/chemical.png");
+        }
+      }
+      #mechanical {
+        left: 0;
+        top: 24vw;
+        .top {
+          content: url("../../assets/images/sustainability/horizontal/hidden/mechanical.jpeg");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/horizontal/hovered/mechanical.png");
+        }
+        h4 {
+          padding-top: 2.5%;
+        }
+        p {
+          padding-top: 7.5%;
+          letter-spacing: -0.04vw;
+        }
+      }
+      #light {
+        left: 52%;
+        top: 24vw;
+        .top {
+          content: url("../../assets/images/sustainability/horizontal/hidden/light.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/horizontal/hovered/light.png");
+        }
+      }
+      #recycle {
+        left: 0;
+        top: 48vw;
+        .top {
+          content: url("../../assets/images/sustainability/horizontal/hidden/recycle.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/horizontal/hovered/recycle.png");
+        }
+      }
+      #water {
+        left: 52%;
+        top: 48vw;
+        .top {
+          content: url("../../assets/images/sustainability/horizontal/hidden/water.png");
+        }
+        .bottom {
+          content: url("../../assets/images/sustainability/horizontal/hovered/water.png");
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .container > .content >.icons{
-        margin-bottom: 220vw;
-        div{
-            img{width: 80%;}
-            h4, p{
-                text-align: center;
-                position: absolute;
-                width: 80%;
-                padding: 7% 3% 1% 35% !important;
-                letter-spacing: 0 !important;
-            }
-            h4{
-                font-size: 3.8vw;
-            }
-            p{
-                padding-top: 14% !important;
-                font-size: 2.8vw;
-            }
-        }
-        #chemical{
-            left: 0;
-            top: 35vw;
-        }
-        #mechanical{top: 70vw;}
-        #light{
-            left: 0;
-            top: 105vw;
-        }
-        #recicle{top: 140vw;}
-        #water{
-            left: 0;
-            top: 175vw;
-        }
+  .container > .content > .icons {
+    margin-bottom: 220vw;
+    div {
+      img {
+        width: 80%;
+      }
+      h4,
+      p {
+        text-align: center;
+        position: absolute;
+        width: 80%;
+        padding: 7% 3% 1% 35% !important;
+        letter-spacing: 0 !important;
+      }
+      h4 {
+        font-size: 3.8vw;
+      }
+      p {
+        padding-top: 14% !important;
+        font-size: 2.8vw;
+      }
     }
+    #chemical {
+      left: 0;
+      top: 35vw;
+    }
+    #mechanical {
+      top: 70vw;
+    }
+    #light {
+      left: 0;
+      top: 105vw;
+    }
+    #recycle {
+      top: 140vw;
+    }
+    #water {
+      left: 0;
+      top: 175vw;
+    }
+  }
 }

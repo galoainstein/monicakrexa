@@ -10,14 +10,14 @@
                 <app-squared-button icon="next" color="white" background="mainColor" id="login"></app-squared-button>
             </div>
         </div>
-        <p class="incorrect">X Senha incorreta.</p>
-        <a href="javascript:void(0)"><h4 class="unknown">Não sei a senha.</h4></a>
+        <p class="incorrect">{{ 'buyers.login.incorrect' | translate }}</p>
+        <a href="javascript:void(0)"><h4 class="unknown">{{ 'buyers.login.unknown' | translate }}</h4></a>
         <div class="explanation" style="visibility: hidden">
-            <h3>Não tem uma chave de acesso?</h3>
-            <p><a href="/clients">Clique aqui</a> para saber mais e preencher o cadastro.</p>
-            <p class="extra">Caso já tenha feito o cadastro, procure a chave de acesso
-                na sua caixa de entrada de email, e lembre de verificar a caixa 
-                de spam! Caso o problema persista, entre em contato conosco.</p>
+            <h3>{{ 'buyers.login.explanation.title' | translate }}</h3>
+            <p class="link">
+                <a [href]='linkWithLang("/buyers")'>{{ 'buyers.login.explanation.link' | translate }}</a> {{ 'buyers.login.explanation.afterLink' | translate }}
+            </p>
+            <p class="extra">{{ 'buyers.login.explanation.text' | translate }}</p>
         </div>
     </div>
 </div>

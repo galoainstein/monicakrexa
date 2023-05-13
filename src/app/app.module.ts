@@ -1,18 +1,20 @@
-import { ClientsModule } from './clients/clients.module';
-import { NgModule } from '@angular/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';  
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';  
 import { BrowserModule } from '@angular/platform-browser';
-
-import { ColorModule } from './color/color.module';
-import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './shared/shared.module';
+import { HttpClient } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ColorModule } from './color/color.module';
 import { HomeComponent } from './home/home.component';
-import { ArtistComponent } from './artist/artist.component';
-import { SustainabilityComponent } from './sustainability/sustainability.component';
+import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
+import { ClientsModule } from './clients/clients.module';
 import { WorldComponent } from './world/world.component';
-import { SinglePageComponent } from './single-page/single-page.component';
+import { ArtistComponent } from './artist/artist.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SinglePageComponent } from './single-page/single-page.component';
+import { SustainabilityComponent } from './sustainability/sustainability.component';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -49,9 +51,21 @@ const app = initializeApp(firebaseConfig);
     ColorModule,
     SharedModule,
     AngularFirestoreModule,
-    ClientsModule
+    ClientsModule,
+    TranslateModule.forRoot({  
+      loader: {  
+         provide: TranslateLoader,  
+         useFactory: httpTranslateLoader,  
+         deps: [HttpClient]  
+         }  
+      })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+  // AOT compilation support  
+  export function httpTranslateLoader(http: HttpClient) {  
+    return new TranslateHttpLoader(http); 
+  }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FormValidations } from '../form-validations';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-error-msg',
@@ -15,7 +15,9 @@ export class ErrorMsgComponent implements OnInit {
   @Input() control: FormControl;
   @Input() label: string;
 
-  constructor() { }
+  constructor(
+    private translate: TranslateService
+  ) { }
 
   ngOnInit() {
   }
@@ -25,7 +27,19 @@ export class ErrorMsgComponent implements OnInit {
     for (const propertyName in this.control.errors) {
       if (this.control.errors.hasOwnProperty(propertyName) &&
         this.control.touched) {
-          return FormValidations.getErrorMsg(this.label, propertyName, this.control.errors[propertyName]);
+          let errorMessage = this.translate.instant(`buyers.form.errorMessages.${propertyName}`)
+
+          if (errorMessage.includes('{{field}}')) {
+            errorMessage = errorMessage.replace('{{field}}', this.label)
+          }
+
+          if (errorMessage.includes('{{requiredValue}}')) {
+            console.log(this.control.errors)
+            const value = this.control.errors['minlength']['requiredLength']
+            errorMessage = errorMessage.replace('{{requiredValue}}', value)
+          }
+
+          return errorMessage;
         }
     }
 

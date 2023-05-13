@@ -1,71 +1,89 @@
 @import "../../variables.scss";
 
+.social-media {
+  background-color: $main-color-primary;
+  height: 100px;
+  padding: 20px;
 
+  .icons {
+    text-align: center;
 
-.social-media{
-    background-color: $main-color-primary;
-    height: 100px;
-    padding: 20px;
-
-    .icons{
-        
-        text-align: center;
-
-        .facebook > img{
-            content:url('../../images/social-media/facebook.png')
-        }
-    
-        .instagram > img{
-            content:url('../../images/social-media/instagram.png')
-        }
-    
-        .whatsapp > img{
-            content:url('../../images/social-media/whatsapp.png')
-        }
-
-        img{
-            max-height: 50px;
-            margin: 5px;
-            background-color: $white-primary;
-            border-radius: 50%;
-            padding: 5px;
-            transition: .5s;
-
-            &:hover{
-                background-color: $white-secondary;
-            }
-        }
+    .facebook > img {
+      content: url("../../assets/images/social-media/facebook.png");
     }
-    
+
+    .instagram > img {
+      content: url("../../assets/images/social-media/instagram.png");
+    }
+
+    .whatsapp > img {
+      content: url("../../assets/images/social-media/whatsapp.png");
+    }
+
+    img {
+      max-height: 50px;
+      margin: 5px;
+      background-color: $white-primary;
+      border-radius: 50%;
+      padding: 5px;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: $white-secondary;
+      }
+    }
+  }
 }
 
-.carousel-item-ext,.prev{
-    display: none !important;  
+.carousel-item-ext,
+.prev {
+  display: none !important;
 }
 
 .carousel-item {
-    height: 84vh;
-    // background: repeat center center scroll;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-    object-fit: cover;
-    
-    &#image-1{
-        content: url('../../images/home/p1-jpg.jpg');
+  height: 84vh;
+  object-fit: cover;
+
+  &#image-1 {
+    content: url("../../assets/images/home/widescreen/1.webp");
+  }
+  &#image-2 {
+    content: url("../../assets/images/home/widescreen/2.webp");
+  }
+  &#image-3 {
+    content: url("../../assets/images/home/widescreen/3.webp");
+  }
+  &#image-4 {
+    content: url("../../assets/images/home/widescreen/4.webp");
+  }
+  &#image-5 {
+    content: url("../../assets/images/home/widescreen/5.webp");
+  }
+  &#image-6 {
+    content: url("../../assets/images/home/widescreen/6.webp");
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .carousel-item {
+    &#image-1 {
+      content: url("../../assets/images/home/mobile/1.webp");
     }
-    &#image-2{
-        content: url('../../images/home/p2-jpg.jpg');
+    &#image-2 {
+      content: url("../../assets/images/home/mobile/2.webp");
     }
-    &#image-3{
-        content: url('../../images/home/p3-jpg.jpg');
+    &#image-3 {
+      content: url("../../assets/images/home/mobile/3.webp");
     }
-    &#image-4{
-        content: url('../../images/home/p4-jpg.jpg');
+    &#image-4 {
+      content: url("../../assets/images/home/mobile/4.webp");
     }
-    &#image-5{
-        content: url('../../images/home/p5-jpg.jpg');
+    &#image-5 {
+      content: url("../../assets/images/home/mobile/5.webp");
     }
-    
+    &#image-6 {
+      content: url("../../assets/images/home/mobile/6.webp");
+    }
+  }
+  
 }

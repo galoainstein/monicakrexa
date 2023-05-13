@@ -1,99 +1,98 @@
 @import "../../../variables.scss";
 
-.container{
-    margin: 0;
-    max-width: fit-content;
-    padding: 5vw 7vw;
+.container {
+  margin: 0;
+  max-width: fit-content;
+  padding: 5vw 7vw;
 
-    .title{
-        font-family: $primary-font;
-        font-size: 3em;
-        color: $main-color-primary;
+  .title {
+    font-family: $primary-font;
+    font-size: 3em;
+    color: $main-color-primary;
+  }
+
+  .text {
+    color: $white-text;
+
+    p {
+      font-family: $quaternary-font;
+      font-size: 1.2vw;
+      text-align: justify;
+      margin-bottom: 2vw;
     }
+  }
 
-    .text{
-        color: $white-text;
-
-        p{
-            font-family: $quaternary-font;
-            font-size: 1.2vw;
-            text-align: justify;
-            margin-bottom: 2vw;
-        }
-    }
-
-    #anodized{
-        content: url("../../../images/color/anodized.jpg");	
-    }
+  #anodized {
+    content: url("../../../assets/images/color/anodized.jpg");
+  }
 }
 
 @media screen and (min-width: 670px) {
-    .container {
-        .content{
-            display: inline-flex;
-            flex-direction: row-reverse;
-        }
-    
-        .title{
-            font-size: 3em;
-            margin-bottom: 2vw;
-        }
-    
-        #anodized{
-            min-width: 33vw;
-            max-width: 33vw;
-            object-fit: cover;
-            height: 100%;
-            margin-left: 5vw;
-        }
+  .container {
+    .content {
+      display: inline-flex;
+      flex-direction: row-reverse;
     }
+
+    .title {
+      font-size: 3em;
+      margin-bottom: 2vw;
+    }
+
+    #anodized {
+      min-width: 33vw;
+      max-width: 33vw;
+      object-fit: cover;
+      height: 100%;
+      margin-left: 5vw;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) and (min-width: 670px) {
-    .container{
-        .title{
-            padding-left: 0;
-        }
-
-        .text{
-            p{
-                font-size: 1.5vw;
-                margin-bottom: 1.8vw;
-            }
-        }
+  .container {
+    .title {
+      padding-left: 0;
     }
+
+    .text {
+      p {
+        font-size: 1.5vw;
+        margin-bottom: 1.8vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 670px) {
-    .container {
-        .title{
-            font-size: 3em;
-            text-align: left;
-        }
-
-        .text{
-            padding-top: 20px;
-            p{
-                font-size: 13px;
-                margin-bottom: 2.1vw;
-            }
-        }
-
-        .content{
-            .anodized {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 30vw;
-                width: 100%;
-                overflow: hidden;
-            }
-            #anodized{
-                margin-top: 20px;
-                min-width: 100%;
-                max-width: 100%;
-                
-            }
-        }   
+  .container {
+    .title {
+      font-size: 3em;
+      text-align: left;
     }
+
+    .text {
+      padding-top: 20px;
+      p {
+        font-size: 13px;
+        margin-bottom: 2.1vw;
+      }
+    }
+
+    .content {
+      .anodized {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vw;
+        width: 100%;
+        overflow: hidden;
+      }
+      #anodized {
+        margin-top: 20px;
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
 }

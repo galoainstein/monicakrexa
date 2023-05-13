@@ -1,36 +1,79 @@
-<nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img alt="Logo Monica Krexa" id="logo-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-      data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
-      aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
-            <a class="nav-link" (click)="pathScrollService.scrollTo('artist')" id="artist"
-            [ngClass]="pathScrollService.isSelected('artist')">MONICA KREXA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="pathScrollService.scrollTo('sustainability')" id="sustainability"
-            [ngClass]="pathScrollService.isSelected('sustainability')">ARTE SUSTENTÁVEL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="pathScrollService.scrollTo('color')" id="color"
-            [ngClass]="pathScrollService.isSelected('color')">COR E ORIGINALIDADE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="pathScrollService.scrollTo('world')" id="world"
-            [ngClass]="pathScrollService.isSelected('world')">ARTE PARA O MUNDO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/clients" id="clients"
-            [ngClass]="pathScrollService.isSelected('clients')">LOJISTAS</a>
-          </li>
-        </ul>
-      </div>
+<nav
+  class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-light bg-light fixed-top"
+>
+  <div class="container">
+    <a class="navbar-brand" [href]='linkWithLang("/home")'>
+      <img alt="Logo Monica Krexa" id="logo-top" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a
+            class="nav-link"
+            (click)="pathScrollService.scrollTo('artist')"
+            id="artist"
+            [ngClass]="pathScrollService.isSelected('artist')"
+            >MONICA KREXA</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="pathScrollService.scrollTo('sustainability')"
+            id="sustainability"
+            [ngClass]="pathScrollService.isSelected('sustainability')"
+            >{{ "sustainability.title" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="pathScrollService.scrollTo('color')"
+            id="color"
+            [ngClass]="pathScrollService.isSelected('color')"
+            >{{ "color.title" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            (click)="pathScrollService.scrollTo('world')"
+            id="world"
+            [ngClass]="pathScrollService.isSelected('world')"
+            >{{ "world.title" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [href]='linkWithLang("/buyers")'
+            id="buyers"
+            [ngClass]="pathScrollService.isSelected('buyers')"
+            >{{ "buyers.title" | translate }}</a
+          >
+        </li>
+        <li class="nav-item">
+          <div class="flags">
+            <button (click)="selectLang('pt')" class="flag-holder flag-br first">
+              <img class="flag" src="../../assets/images/flags/br.png" alt="">
+            </button>
+            <button (click)="selectLang('en')" class="flag-holder flag-gb last">
+              <img class="flag flag-gb" src="../../assets/images/flags/gb.png" alt="">
+            </button>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

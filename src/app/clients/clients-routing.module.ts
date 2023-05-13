@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'login', component:  LoginComponent },
   { path: 'login/view/:file', component:  VisualizePdfComponent },
   { path: 'login/:password', component:  CatalogueComponent },
-  { path: '**', pathMatch: 'full', redirectTo: '/clients' }
+  { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
 @NgModule({

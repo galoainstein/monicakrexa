@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 import { LoginService } from 'src/app/shared/services/login.service';
 
@@ -16,27 +17,32 @@ export class CatalogueComponent implements OnInit {
 
   private fullCatalogueURL: string = '../../../catalogues/CATALOGUE MK.pdf'
 
+  public viewButtonText: string;
+
   constructor(
     private loginService: LoginService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private translate: TranslateService
   ) { }
 
   ngOnInit(): void {
     this.setPassword()
 
     if (!this.loginService.validatePassword(this.password)){
-      window.location.pathname = '/clients/login';
+      window.location.pathname = `${this.translate.currentLang}/buyers/login`;
     }
+
+    this.viewButtonText = this.translate.instant('buyers.catalogue.view')
 
     this.downloadButton = document.querySelector('#download-catalogue') as HTMLElement;
 
     this.downloadButton.addEventListener('click', () => {
-      window.location.pathname = `/clients/login/view/${this.password}.full`
+      window.location.pathname = `${this.translate.currentLang}/buyers/login/view/${this.password}.full`
     })
     
     this.downloadUrban = document.querySelector('#download-catalogue-urban') as HTMLElement;
     this.downloadUrban.addEventListener('click', () => {
-      window.location.pathname = `/clients/login/view/${this.password}.urban`
+      window.location.pathname = `${this.translate.currentLang}/buyers/login/view/${this.password}.urban`
     })
     
   }
@@ -50,8 +56,8 @@ export class CatalogueComponent implements OnInit {
     }
   }
 
-  private openPDF(url: string) {
-    window.open(url, '_blank');
+  private linkWithLang(link: string){
+    const lang = this.translate.currentLang;
+    return lang + link;
   }
-
 }

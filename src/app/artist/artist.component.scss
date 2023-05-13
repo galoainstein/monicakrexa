@@ -1,201 +1,220 @@
 @import "../../variables.scss";
 
-.container{
-    margin: 0;
-    max-width: fit-content;
-    padding: 5vw 7vw;
+.container {
+  position: relative;
+  margin: 0;
+  max-width: fit-content;
+  padding: 5vw 7vw;
 
-    .title{
-        font-family: $primary-font;
-        font-size: 3em;
+  .title {
+    font-family: $primary-font;
+    font-size: 3em;
+    color: $main-color-primary;
+  }
+
+  .text {
+    color: $white-text;
+
+    .description {
+      border-left: 11px solid $main-color-primary;
+      padding-left: 10px;
+      margin-bottom: 2vw;
+
+      font-family: $tertiary-font;
+      letter-spacing: 0.06em;
+      font-size: 1.5vw;
+    }
+
+    p {
+      font-family: $quaternary-font;
+      font-size: 1.2vw;
+      text-align: justify;
+      margin-bottom: 2vw;
+    }
+
+    h3 {
+      font-family: $tertiary-font;
+      letter-spacing: 0.06em;
+      font-size: 1.1vw;
+
+      span {
         color: $main-color-primary;
+      }
     }
 
-    .text{
-        color: $white-text;
+    .mentions {
+      padding-top: 1vw;
 
-        .description{
-            border-left: 11px solid $main-color-primary;
-            padding-left: 10px;
-            margin-bottom: 2vw;
+      button {
+        height: 5vw;
+        margin-right: 15px;
+        border-radius: 5px;
+        border: 0;
+        transition: 0.5s;
+      }
 
-            font-family: $tertiary-font;
-            letter-spacing: .06em;
-            font-size: 1.5vw;
+      .igara,
+      .melko {
+        background-color: white;
+        &:hover {
+          background-color: rgb(180, 180, 180);
+        }
+      }
+
+      .igara > .logo {
+        content: url("../../assets/images/other-logos/igara.png");
+        max-width: 8vw;
+      }
+
+      .melko > .logo {
+        content: url("../../assets/images/other-logos/melko.gif");
+        max-width: 6.6vw;
+        margin: 0 0.7vw;
+      }
+
+      .ajorio {
+        background-color: rgb(182, 140, 24);
+
+        &:hover {
+          background-color: rgb(119, 92, 19);
         }
 
-        p{
-            font-family: $quaternary-font;
-            font-size: 1.2vw;
-            text-align: justify;
-            margin-bottom: 2vw;
+        .logo {
+          content: url("../../assets/images/other-logos/ajorio.png");
+          max-width: 5.8vw;
+          margin: 0 1.1vw;
         }
-
-        h3{
-            font-family: $tertiary-font;
-            letter-spacing: .06em;
-            font-size: 1.1vw;
-
-            span{
-                color: $main-color-primary;
-            }
-        }
-
-        .mentions{
-            padding-top: 1vw;
-
-            button{
-                height: 5vw;
-                margin-right: 15px;
-                border-radius: 5px;
-                border: 0;
-                transition: .5s;
-            }
-
-            .igara, .melko{
-                background-color: white;
-                &:hover{
-                    background-color: rgb(180, 180, 180);
-                }
-            }
-
-            .igara > .logo{
-                content:url("../../images/other-logos/igara.png");
-                max-width: 8vw;
-            }
-
-            .melko > .logo{
-                content:url("../../images/other-logos/melko.gif");
-                max-width: 6.6vw;
-                margin: 0 .7vw;
-            }
-
-            .ajorio{
-                background-color: rgb(182, 140, 24);
-                
-
-                &:hover{
-                    background-color: rgb(119, 92, 19);
-                }
-
-                .logo{
-                    content:url("../../images/other-logos/ajorio.png");
-                    max-width: 5.8vw;
-                    margin: 0 1.1vw;
-                }
-            }
-        }
+      }
     }
+  }
 
-    #monochromatic{
-        content: url("../../images/artist/monochromatic.jpg");
-    }
-    
-    #colored{
-        content: url("../../images/artist/colored.jpg");
-    }
+  #monochromatic {
+    content: url("../../assets/images/artist/monochromatic.jpg");
+  }
+
+  #colored {
+    content: url("../../assets/images/artist/colored.jpg");
+  }
 }
 
 @media screen and (min-width: 670px) {
-    .container {
-        .content{
-            display: inline-flex;
-        }
-    
-        .title{
-            font-size: 3em;
-            padding-left: 35vw;
-            margin-bottom: 2vw;
-        }
-    
-        #monochromatic{
-            max-width: 30vw;
-            object-fit: cover;
-            height: 100%;
-            margin-right: 5vw;
-        }
-        
-        #colored{
-            visibility: hidden;
-            max-width: 0;
-            max-height: 0;
-        }
+  .container {
+    .text > .description {
+      padding-right: 28%;
     }
+
+    .content {
+      display: inline-flex;
+    }
+
+    .title {
+      font-size: 3em;
+      padding-left: 35vw;
+      margin-bottom: 2vw;
+    }
+
+    #monochromatic {
+      max-width: 30vw;
+      object-fit: cover;
+      height: 100%;
+      margin-right: 5vw;
+    }
+
+    #colored {
+      visibility: hidden;
+      max-width: 0;
+      max-height: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 960px) and (min-width: 670px) {
-    .container{
-        .title{
-            position: absolute;
-            padding-left: 0;
-        }
-
-        #monochromatic{margin-top: 80px;}
-
-        .text{
-            .description{font-size: 1.7vw;}
-            p{
-                font-size: 1.5vw;
-                margin-bottom: 1.8vw;
-            }
-            h3{font-size: 1.4vw;}
-        }
+  .container {
+    .title {
+      position: absolute;
+      padding-left: 0;
     }
+
+    #monochromatic {
+      margin-top: 80px;
+    }
+
+    .text {
+      .description {
+        font-size: 1.7vw;
+      }
+      p {
+        font-size: 1.5vw;
+        margin-bottom: 1.8vw;
+      }
+      h3 {
+        font-size: 1.4vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 670px) {
-    .container {
-        .title{
-            font-size: 3em;
-            text-align: left;
-        }
-
-        .text{
-            padding-top: 20px;
-            .description{
-                font-size: 3vw;
-                margin-bottom: 2.1vw;
-            }
-            p{
-                font-size: 13px;
-                margin-bottom: 2.1vw;
-            }
-            h3{font-size: 2.7vw;}
-
-            .mentions{
-                button{
-                    height: 11vw;
-                    margin-right: 2vw;
-                }
-                .igara > .logo{max-width: 18vw;}
-                .melko > .logo{
-                    max-width: 15vw;
-                    margin: 0 1.5vw;
-                }   
-                .ajorio > .logo{
-                    max-width: 14vw;
-                    margin: 0 2vw;
-                }
-            }
-        }
-
-        .content{
-            #monochromatic{
-                visibility: hidden;
-                max-width: 0;
-                max-height: 0;
-            } 
-            #colored{
-                margin-top: 20px;
-                max-width: 100%;
-            }
-        }   
+  .container {
+    .title {
+      font-size: 3em;
+      text-align: left;
     }
+
+    .text {
+      padding-top: 20px;
+      .description {
+        font-size: 3vw;
+        margin-bottom: 2.1vw;
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 2.1vw;
+      }
+      h3 {
+        font-size: 2.7vw;
+      }
+
+      .mentions {
+        button {
+          height: 11vw;
+          margin-right: 2vw;
+        }
+        .igara > .logo {
+          max-width: 18vw;
+        }
+        .melko > .logo {
+          max-width: 15vw;
+          margin: 0 1.5vw;
+        }
+        .ajorio > .logo {
+          max-width: 14vw;
+          margin: 0 2vw;
+        }
+      }
+    }
+
+    .content {
+      #monochromatic {
+        visibility: hidden;
+        max-width: 0;
+        max-height: 0;
+      }
+      #colored {
+        margin-top: 20px;
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 655px) {
-    .container {        
-        .content{margin-top: 45px;}
-        .title{position: absolute;}
+  .container {
+    .content {
+      margin-top: 45px;
     }
+    .title {
+      position: absolute;
+    }
+  }
 }

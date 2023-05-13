@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { LoginService } from 'src/app/shared/services/login.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
   unknown: HTMLAnchorElement;
 
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    public translate: TranslateService
   ) { }
 
   ngOnInit(): void {
@@ -51,6 +53,11 @@ export class LoginComponent implements OnInit {
 
   private togglePasswordVisibility() {
     this.password.type = this.password.type === 'password' ? 'text' : 'password';
+  }
+
+  public linkWithLang(link: string){
+    const lang = this.translate.currentLang;
+    return lang + link;
   }
 
 }

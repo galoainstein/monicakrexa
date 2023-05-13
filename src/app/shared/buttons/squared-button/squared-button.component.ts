@@ -22,7 +22,6 @@ export class SquaredButtonComponent implements OnInit {
 
   ngOnInit(): void {
     this.squaredButton = document.querySelector(`#${this.id}>button.squared`) as HTMLButtonElement;
-    // console.log(this.squaredButton.innerHTML)
     this.squaredButton.innerHTML = this.getIcons();
 
     this.squaredButton.style.backgroundColor = this.getColors().background;

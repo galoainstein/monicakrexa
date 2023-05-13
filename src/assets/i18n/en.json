@@ -1,0 +1,151 @@
+{
+  "artist": {
+    "title": "THE ARTIST",
+    "description": "BORN IN ARGENTINA AND ADOPTED BY BUZIOS, MONICA KREXA IS A LAWYER AND PLASTIC ARTIST WHO ALWAYS SHOWED HER PASSION FOR ART.",
+    "paragraphs": {
+      "one": "She has been working with aluminum since 1986 when she encountered it by chance in Buenos Aires, her homeland, thus starting a long history of hard work and great achievements.",
+      "two": "In 2002 she arrived in Buzios and began selling her pieces on the beach, arousing people's curiosity and desire for everything she presented. Since then, her career has continued to rise, participating in important fashion events such as Fashion Rio, therefore conquering the Brazilian market. Later being presented at international events such as Bijorhca, which takes place in Paris (France); Homi, in Milano (Italy), attracting people from all over the world and gaining prominence in the international fashion universe."
+    },
+    "more": "WANT TO KNOW MORE?",
+    "mentions": "CHECK THE MENTIONS:"
+  },
+  "sustainability": {
+    "title": "SUSTAINABLE ART",
+    "description": "WITH THE CONCEPT OF SUSTAINABILITY AS A PHILOSOPHY OF LIFE, ALUMINUM IS THE DIFFERENTIAL ASPECT OF THE BRAND: ECOLOGICALLY CORRECT, IT CAN BE RECYCLED INFINITE TIMES.",
+    "paragraphs": {
+      "one": "Her atelier located in Buzios was entirely planned to work alongside the environment. Even the roof, which is made with ecological membranes adapted with a curious system of recycled bottles to attract sunlight and reduce the usage of electricity.",
+      "two": "Rainwater is collected in a special cistern, filtered, and used to wash all the utilized material in the production of the pieces. Every care for the environment is present from the beginning to the end of the completely handmade elaboration of each one of the pieces."
+    },
+    "cards": {
+      "artisanal": {
+        "title": "ARTISANAL PIECES",
+        "text": "All our pieces are handmade, one by one, with all our love and care."
+      },
+      "chemical": {
+        "title": "NO CHEMICALS",
+        "text": "No chemicals of any kind are used in the production of our pieces."
+      },
+      "mechanical": {
+        "title": "MECHANICAL ENERGY",
+        "text": "Most of our machines run by mechanical force, relieving the use of electrical energy."
+      },
+      "light": {
+        "title": "NATURAL LIGHT",
+        "text": "On the ceiling of our atelier, we installed recycled pet bottles that allow natural light to pass through."
+      },
+      "recycle": {
+        "title": "MATERIAL REUSE",
+        "text": "After a rigorous selection process, surplus materials are reused."
+      },
+      "water": {
+        "title": "WATER COLLECTION",
+        "text": "Rainwater is collected by a special cistern and used to wash materials."
+      }
+    }
+  },
+  "color": {
+    "title": "COLOR AND ORIGINALITY",
+    "description": "THE BRAND MONICA KREXA IS INSPIRED BY A TYPICALLY BRAZILIAN DYNAMISM AND EXUBERANCE, GIVING LIFE TO AN IRREVERENT, FUN, COLORFUL AND ORIGINAL STYLE.",
+    "paragraphs": {
+      "one": "Monica's pieces enchant for their wide range of colors that make them all unique. The process to color the pieces is quite complex, requiring a lot of technique, skill, and patience to achieve the beauty designed in each one of these jewels.",
+      "two": "Its material is aluminum, in which she models collections that combine art and sustainability at the same time. The colors never darken, so the pieces can be used on the beach, resist sunlight, and never oxidize."
+    },
+    "anodized": {
+      "title": "ANODIZED",
+      "paragraphs": {
+        "one": "The process for coloring aluminum parts is called \"anodization\". It is a complex system that creates a protective layer on the surface of the pieces, giving them a fine workmanship hardness and color.",
+        "two": "Even after this process, the pieces remain resistant to the sun, do not rust, and do not peel off the paint. This procedure is ecological because in addition to using non-toxic products, the exceding paint from where the pieces were submerged is recovered, recycled, and reused.",
+        "three": "There is a multitude of colors that can be chosen and combined!"
+      }
+    },
+    "maintaining": {
+      "title": "HOW TO CARE FOR YOUR PIECE",
+      "cards": {
+        "friction": {
+          "text": "Avoid rubbing against other objects that could cause \"injury\" to the piece. Do not keep your jewelry inside the bag with a key, coins, or other metallic objects, as it may be scratched."
+        },
+        "time": {
+          "text": "Over time, natural wear and tear are inevitable... Only aluminum parts in natural color will be able to maintain the same appearance. The laces may vary in their lifespan. The use of perfumes or other wet factors can accelerate wear."
+        },
+        "wash": {
+          "text": "If they need cleaning, just wipe them with a damp cloth and soap. Only jewelry in natural aluminum colors can withstand a more aggressive wash. If you want to shine and renew the finish, you can wash the piece with a sponge and soap."
+        },
+        "travel": {
+          "text": "To carry the items in your suitcase or take them on a trip, I recommend putting them in fabric bags to avoid any friction."
+        }
+      },
+      "warningTexts": {
+        "one": "YOUR PIECE:",
+        "two": "IS WATER RESISTANT",
+        "three": "IS SUN RESISTANT",
+        "four": "DOESN'T DARKEN",
+        "five": "DOESN'T RUST",
+        "six": "IS NICKEL FREE"
+      }
+    }
+  },
+  "world": {
+    "title": "ART FOR THE WORLD",
+    "description": "INCLUSION AND VERSATILITY ARE UNIQUE CHARACTERISTICS OF THE BRAND THAT PRODUCES ADJUSTABLE PARTS, THOUGHT AND DESIGNED TO ADAPT TO THE SHAPE AND SIZE OF EVERYONE WHO WANTS TO USE THEM.",
+    "paragraphs": {
+      "one":"By choosing aluminum, the designer seeks a market that is not exclusively elitist, thus developing very accessible collections. It is at this moment that the artist applies her jewelry technique to aluminum, a metal with a lower cost when compared to other noble metals, unusual for the fashion world.",
+      "two": "The Monica Krexa brand is present in different contemporary art museums such as: Museu do Amanhã (Museum of Tomorrow), in Rio de Janeiro, Brazil; Museum of Contemporary Art Chicago in the United States; Museum of Contemporary Art Berlin, in Germany and the art gallery Dar Al-Anda, in Jordan. Her pieces are sold throughout Brazil, part of South America, Europe, Australia, and Israel."
+    }
+  },
+  "buyers": {
+    "title": "BUYERS",
+    "description": "*Prompt Delivery: the customer will be attended by a representative who has a stock of our pieces to carry out the immediate delivery of the chosen product.",
+    "paragraphs": {
+      "one":"We do not do retail sales. We supply WHOLESALE EXCLUSIVELY TO PHYSICAL STORES.",
+      "two": "Foreign Sales: Request login and password to access our catalogue.",
+      "three": "Inside Brazil: We work with",
+      "green": "PROMPT DELIVERY"
+    },
+    "buttons": {
+      "signUp": "I HAVE A PHYSICAL STORE AND I WANT TO REGISTER",
+      "login": "I HAVE AN ACCESS KEY"
+    },
+    "form": {
+      "title": "MAKE YOUR REGISTRATION",
+      "required": "*Required items",
+      "storeName": "Store name",
+      "name": "Name of representative",
+      "cnpj": "CNPJ (only for stores in Brazil)",
+      "email": "Email",
+      "phone": "Phone",
+      "website": "Website",
+      "instagram": "Instagram",
+      "social": "Other social networks",
+      "address": "Full address",
+      "message": "Message",
+      "submit": "SEND REGISTRATION",
+      "errorMessages": {
+        "required": "{{field}} is required.",
+        "minlength": "{{field}} requires at least {{requiredValue}} characters.",
+        "maxlength": "{{field}} only allows {{requiredValue}} characters.",
+        "email": "Invalid Email",
+        "pattern": "Invalid Field"
+      }
+    },
+    "thanks": {
+        "title": "THANK YOU FOR THE REGISTRATION",
+        "subtitle": "WE'LL GET IN TOUCH SOON",
+        "text": "Redirecting to home page..."
+    },
+    "login": {
+      "incorrect": "X Incorrect password.",
+      "unknown": "I don't know the password.",
+      "explanation": {
+        "title": "Don't have a passkey?",
+        "link": "Click here",
+        "afterLink": "to learn more and complete the registration.",
+        "text": "If you have already registered, look for the access key in your email inbox, and remember to check your spam folder! If the problem persists, please contact us."
+      }
+    },
+    "catalogue": {
+      "full": "MONICA KREXA CATALOGUE",
+      "urban": "URBANA COLLECTION CATALOGUE",
+      "view": "VIEW CATALOGUE"
+    }
+  }
+}
