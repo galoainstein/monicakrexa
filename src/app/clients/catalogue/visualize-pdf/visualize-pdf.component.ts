@@ -33,7 +33,6 @@ export class VisualizePdfComponent implements OnInit {
       const paramArray: string[] = param.split('.')
       this.password = paramArray[0];
       this.file = paramArray[1];
-
       this.iframe = document.querySelector(`#${this.file}`) as HTMLIFrameElement;
       this.iframe.hidden = false;
     } else {
