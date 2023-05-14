@@ -18,7 +18,8 @@ import { SustainabilityComponent } from './sustainability/sustainability.compone
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore/'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+import { VideoAtelierComponent } from './video-atelier/video-atelier.component'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -43,7 +44,8 @@ const app = initializeApp(firebaseConfig);
     SustainabilityComponent,
     WorldComponent,
     SinglePageComponent,
-    NavBarComponent
+    NavBarComponent,
+    VideoAtelierComponent
   ],
   imports: [
     BrowserModule,
