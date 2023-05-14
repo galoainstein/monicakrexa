@@ -135,6 +135,7 @@
     "login": {
       "incorrect": "X Senha incorreta.",
       "unknown": "Não sei a senha.",
+      "placeholder": "Chave de acesso",
       "explanation": {
         "title": "Não tem uma chave de acesso?",
         "link": "Clique aqui", 

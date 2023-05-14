@@ -135,6 +135,7 @@
     "login": {
       "incorrect": "X Incorrect password.",
       "unknown": "I don't know the password.",
+      "placeholder": "Password",
       "explanation": {
         "title": "Don't have a passkey?",
         "link": "Click here",
