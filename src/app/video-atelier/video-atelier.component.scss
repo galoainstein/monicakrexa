@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+.container {
+  position: relative;
+  display: inline-block;
+  margin: 5vw 17vw 0 17vw;
+  width: 65vw;
+//   min-width: 100%;
+//   padding: 5vw 7vw;
+
+  #dummy {
+    margin-top: 55.3%;
+    /* 4:3 aspect ratio */
+  }
+
+  #youtube-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    margin: 5vw 7vw;
+    width: 85vw;
+  }
+}
