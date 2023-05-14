@@ -14,4 +14,5 @@ Spanish is expected to be added soon!
 ## Domain
 
 You can access this project live on: www.monicakrexa.com
-or go directly to the English version: www.monicakrexa.com/en
+
+Or go directly to the English version: www.monicakrexa.com/en
